@@ -6,23 +6,30 @@ import java.util.Scanner;
 public class Exc2 {
     public static void main(String[] args) {
         Random random = new Random();
-        int x = random.nextInt(100) + 1;
+        int x = random.nextInt(100) + 1; // unknown number
+        int inp = 0; // entered number by user
+        int i = 0; // count of tries
         Scanner sc = new Scanner(System.in);
-        for (int i=0; i<8; i++){
-            int inp;
+        while (inp != x) {
 
             try {
                 inp = sc.nextInt();
-            } catch (java.util.InputMismatchException e){
+            } catch (java.util.InputMismatchException e) {
                 System.out.println("Ошибка ввода, попробуйте еще раз:");
                 sc = new Scanner(System.in);
-                inp = sc.nextInt();
+                continue;
             }
 
-            if (inp==x){
+            i++;
+            if (i == 8) {
+                System.out.println("Неудача. Загаданное число = " + x);
+                break;
+            }
+
+            if (inp == x) {
                 System.out.println("Успех: " + x);
                 break;
-            } else if (inp<x){
+            } else if (inp < x) {
                 System.out.println("Меньше");
             } else System.out.println("Больше");
         }
