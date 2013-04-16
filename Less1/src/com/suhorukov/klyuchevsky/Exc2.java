@@ -4,7 +4,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Exc2 {
-    public static void main(String[] args) {
+    public static void main(String[] args) { // this is just a commit test
         Random random = new Random();
         int x = random.nextInt(100) + 1; // unknown number
         int inp; // entered number by user
