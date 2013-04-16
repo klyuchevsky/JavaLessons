@@ -7,10 +7,10 @@ public class Exc2 {
     public static void main(String[] args) {
         Random random = new Random();
         int x = random.nextInt(100) + 1; // unknown number
-        int inp = 0; // entered number by user
+        int inp; // entered number by user
         int i = 0; // count of tries
         Scanner sc = new Scanner(System.in);
-        while (inp != x) {
+        while (true) {
 
             try {
                 inp = sc.nextInt();
