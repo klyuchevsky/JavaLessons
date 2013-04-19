@@ -26,6 +26,15 @@ public class Calculator {
                 System.out.println(w);
             }
 
+//            System.out.println(words[0]);
+            if (map.containsKey(words[0])) {
+//                System.out.println(map.get(words[0]));
+                Object x = map.get(words[0]);
+                System.out.println(x);
+                x.execute();
+            }
+            ;
+
 
 //            new Push().execute();
 
