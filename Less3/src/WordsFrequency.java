@@ -48,7 +48,7 @@ public class WordsFrequency {
             });
 
             for (int z : frequency.values()) {
-                wordCount += +z;
+                wordCount += z;
             }
 
             try (Writer out = new OutputStreamWriter(new FileOutputStream("output.csv"))) {
