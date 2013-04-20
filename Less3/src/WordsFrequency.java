@@ -6,6 +6,7 @@ public class WordsFrequency {
         try (Reader r = new InputStreamReader(new BufferedInputStream(new FileInputStream(args[0])))) {
             final HashMap<String, Integer> frequency = new HashMap<>();
             StringBuilder sb = new StringBuilder();
+            int wordCount = 0; // Count of all words
 
             int i = 0; //current character
 
@@ -15,19 +16,22 @@ public class WordsFrequency {
                     if (Character.isLetterOrDigit((char) i)) {
                         sb.append((char) i);
                     } else {
-                        String key = sb.toString(); // word from buffer
+                        String word = sb.toString(); // word from buffer
                         sb.setLength(0);
                         int val = 1; // first word in hash map
-                        if (frequency.containsKey(key) && key.length() > 0) {
-                            val += frequency.get(key);
+                        if (frequency.containsKey(word) && word.length() > 0) {
+                            val += frequency.get(word);
                         }
-                        frequency.put(key, val);
+                        if (word.length() > 0) {
+                            frequency.put(word, val);
+                        }
                     }
 
                 } catch (IOException e) {
                     System.out.println("Не могу прочитать символ");
                 }
             }
+
             System.out.println(frequency);
             List<String> list = new ArrayList<>(frequency.keySet());
             Collections.sort(list, new Comparator<String>() {
@@ -43,12 +47,17 @@ public class WordsFrequency {
                 }
             });
 
-            try (Writer out = new OutputStreamWriter(new FileOutputStream("output.csv"))) {
-                for (String str : list) {
-                    out.write(str + "," + frequency.get(str) + ";");
-                }
+            for (int z : frequency.values()) {
+                wordCount += +z;
             }
 
+            try (Writer out = new OutputStreamWriter(new FileOutputStream("output.csv"))) {
+                for (String str : list) {
+                    out.write(str + ";" + frequency.get(str) + ";" + (double) frequency.get(str) / wordCount * 100 + "%;\n");
+                }
+            } catch (IOException e) {
+                System.out.println("Не могу сохранить файл");
+            }
 
         } catch (FileNotFoundException e) {
             System.out.println("Не найден файл");
