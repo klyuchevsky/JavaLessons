@@ -7,32 +7,22 @@ public class WordsFrequency {
             final HashMap<String, Integer> frequency = new HashMap<>();
             StringBuilder sb = new StringBuilder();
             int wordCount = 0; // Count of all words
+            int currentChar = 0; //current character
 
-            // todo лучше сразу назвать переменную currentChar
-            int i = 0; //current character
-
-            while (i != -1) {
-                try {
-                    i = r.read();
-                    if (Character.isLetterOrDigit((char) i)) {
-                        sb.append((char) i);
-                    } else {
-                        String word = sb.toString(); // word from buffer
-                        sb.setLength(0);
-                        int val = 1; // first word in hash map
-                        if (frequency.containsKey(word) && word.length() > 0) {
-                            val += frequency.get(word);
-                        }
-                        if (word.length() > 0) {
-                            frequency.put(word, val);
-                        }
+            while (currentChar != -1) {
+                currentChar = r.read();
+                if (Character.isLetterOrDigit((char) currentChar)) {
+                    sb.append((char) currentChar);
+                } else {
+                    String word = sb.toString(); // word from buffer
+                    sb.setLength(0);
+                    int val = 1; // first word in hash map
+                    if (frequency.containsKey(word) && word.length() > 0) {
+                        val += frequency.get(word);
                     }
-                    // в этом блоке try/cache нет смысла в данной ситуации
-                    // снаружи уже есть один блок, которым можно отловить IOException
-                    // предлагается внутренний блок убрать, а IOException отловить внешним
-                    // это сделает программу менее запутанной
-                } catch (IOException e) {
-                    System.out.println("Не могу прочитать символ");
+                    if (word.length() > 0) {
+                        frequency.put(word, val);
+                    }
                 }
             }
 

@@ -3,22 +3,17 @@ package com.suhorukov.klyuchevsky;
 import java.util.Random;
 import java.util.Scanner;
 
-/**
- * todo Замечания
- * <p/>
- * переменные x и inp нужно сделать локальными, т.к. они нигде больше не используются
- */
-
 public class Exc2 {
-    static private int x; // unknown number
-    static private int inp; // entered number by user
-    static private int i; // count of tries
 
     public static void main(String[] args) {
+        int x; // unknown number
+        int inp; // entered number by user
+        int tries = 0; // count of tries
+
         Random random = new Random();
         x = random.nextInt(100) + 1;
         Scanner sc = new Scanner(System.in);
-        // create object of class to manage scanner and output messages
+        // create instance of class to manage scanner and output messages
         Ecx2ImplementInterface manage = new Ecx2ImplementInterface();
 
         while (true) {
@@ -31,8 +26,9 @@ public class Exc2 {
                 continue;
             }
 
-            i++;
-            if (i == 8) {
+            tries++;
+
+            if (tries == 8) {
                 manage.print("Неудача. Загаданное число = " + x);
                 break;
             }

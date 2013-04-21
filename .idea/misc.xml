@@ -4,7 +4,7 @@
     <option name="defaultSettings" value="true" />
     <option name="id" value="1351070864943" />
     <option name="name" value="default" />
-    <option name="pathToConfigFileJava" value="$PROJECT_DIR$/../../../../perforce/steve/Sandbox/codestyle/accusoft-proxyserver.xml" />
+    <option name="pathToConfigFileJava" value="C:/perforce/steve/Sandbox/codestyle/accusoft-proxyserver.xml" />
     <option name="selectedJavaProfile" value="accusoft-proxyserver" />
   </component>
   <component name="EntryPointsManager">
