@@ -3,6 +3,12 @@ package com.suhorukov.klyuchevsky;
 import java.util.Random;
 import java.util.Scanner;
 
+/**
+ * todo Замечания
+ * <p/>
+ * переменные x и inp нужно сделать локальными, т.к. они нигде больше не используются
+ */
+
 public class Exc2 {
     static private int x; // unknown number
     static private int inp; // entered number by user

@@ -8,6 +8,7 @@ public class WordsFrequency {
             StringBuilder sb = new StringBuilder();
             int wordCount = 0; // Count of all words
 
+            // todo лучше сразу назвать переменную currentChar
             int i = 0; //current character
 
             while (i != -1) {
@@ -26,7 +27,10 @@ public class WordsFrequency {
                             frequency.put(word, val);
                         }
                     }
-
+                    // в этом блоке try/cache нет смысла в данной ситуации
+                    // снаружи уже есть один блок, которым можно отловить IOException
+                    // предлагается внутренний блок убрать, а IOException отловить внешним
+                    // это сделает программу менее запутанной
                 } catch (IOException e) {
                     System.out.println("Не могу прочитать символ");
                 }
