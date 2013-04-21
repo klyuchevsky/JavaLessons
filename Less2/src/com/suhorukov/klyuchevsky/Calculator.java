@@ -4,42 +4,43 @@ import java.util.*;
 
 public class Calculator {
     public static void main(String[] args) {
-        Stack<Double> stack = new Stack<>();
-        Map<String, Command> map = new HashMap<String, Command>();
-        String string = "";
-        Map<String, Double> variables = new HashMap<String, Double>();
+        Stack<Double> stack = new Stack<>(); // stack to store values
+        Map<String, Command> commands = new HashMap<>(); // hashmap to store commands
+        String string; // string to store current command
+        Map<String, Double> variables = new HashMap<>(); // hashmap to store variables
 
-        map.put("PUSH", new Push());
-        map.put("POP", new Pop());
-        System.out.println(map.keySet());
-        System.out.println(map.values());
+        commands.put("push", new Push());
+        commands.put("pop", new Pop());
+        commands.put("add", new Add());
+        commands.put("-", new Diminution());
+        commands.put("*", new Multiply());
+        commands.put("/", new Divide());
+
+        System.out.println(commands.keySet());
+        System.out.println(commands.values());
+        Scanner sc = new Scanner(System.in);
 
         while (true) {
-            Scanner sc = new Scanner(System.in);
             string = sc.nextLine();
-            String[] words = string.split(" ");
+            if ("quit".equals(string)) {
+                break;
+            }
 
+            String[] words = string.split(" ");
 
             for (String w : words) {
                 System.out.println(w);
             }
 
-//            System.out.println(words[0]);
-            if (map.containsKey(words[0])) {
+            if (commands.containsKey(words[0])) {
 
-                Command x = map.get(words[0]);
+                Command x = commands.get(words[0]);
                 x.execute(stack, string, variables);
 
-            }
+            } else System.out.println("Неизвестная команда: " + words[0]);
 
-
-//            new Push().execute();
-
+            System.out.println(stack.toString());
 
         }
-
-
     }
-
-
 }
