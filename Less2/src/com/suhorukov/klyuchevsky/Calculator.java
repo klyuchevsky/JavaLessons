@@ -11,10 +11,14 @@ public class Calculator {
 
         commands.put("push", new Push());
         commands.put("pop", new Pop());
-        commands.put("add", new Add());
+        commands.put("+", new Add());
         commands.put("-", new Diminution());
         commands.put("*", new Multiply());
         commands.put("/", new Divide());
+        commands.put("#", new Commentary());
+        commands.put("print", new Print());
+        commands.put("define", new Define());
+
 
         System.out.println(commands.keySet());
         System.out.println(commands.values());
@@ -40,7 +44,7 @@ public class Calculator {
             } else System.out.println("Неизвестная команда: " + words[0]);
 
             System.out.println(stack.toString());
-
+            System.out.println(variables);
         }
     }
 }
