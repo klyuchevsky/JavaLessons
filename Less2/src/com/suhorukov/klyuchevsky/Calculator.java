@@ -1,9 +1,6 @@
 package com.suhorukov.klyuchevsky;
 
-import java.io.BufferedInputStream;
-import java.io.FileInputStream;
-import java.io.InputStreamReader;
-import java.io.Reader;
+import java.io.*;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
@@ -30,7 +27,21 @@ public class Calculator {
         System.out.println(commands.keySet());
         Scanner sc = new Scanner(System.in);
 
-//        (Reader r = new InputStreamReader(new BufferedInputStream(new FileInputStream(args[0]))))
+        if (args.length != 0) {
+            try (Reader r = new InputStreamReader(new BufferedInputStream(new FileInputStream(args[0])))) {
+                int currentChar = 0;
+                while (currentChar != -1) {
+                    currentChar = r.read();
+                    System.out.println((char) currentChar);
+                }
+                return;
+            } catch (FileNotFoundException e) {
+                System.out.println("Не удается найти файл");
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+
 
         while (true) {
             string = sc.nextLine();
