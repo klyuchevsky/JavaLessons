@@ -15,11 +15,10 @@ public class Calculator {
         commands.put("-", new Diminution());
         commands.put("*", new Multiply());
         commands.put("/", new Divide());
+        commands.put("sqrt", new Sqrt());
         commands.put("#", new Commentary());
         commands.put("print", new Print());
         commands.put("define", new Define());
-        commands.put("sqrt", new Sqrt());
-
 
         System.out.println(commands.keySet());
         System.out.println(commands.values());
