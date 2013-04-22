@@ -1,6 +1,13 @@
 package com.suhorukov.klyuchevsky;
 
-import java.util.*;
+import java.io.BufferedInputStream;
+import java.io.FileInputStream;
+import java.io.InputStreamReader;
+import java.io.Reader;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
+import java.util.Stack;
 
 public class Calculator {
     public static void main(String[] args) {
@@ -21,8 +28,9 @@ public class Calculator {
         commands.put("define", new Define());
 
         System.out.println(commands.keySet());
-        System.out.println(commands.values());
         Scanner sc = new Scanner(System.in);
+
+//        (Reader r = new InputStreamReader(new BufferedInputStream(new FileInputStream(args[0]))))
 
         while (true) {
             string = sc.nextLine();
@@ -31,10 +39,6 @@ public class Calculator {
             }
 
             String[] words = string.split(" ");
-
-            for (String w : words) {
-                System.out.println(w);
-            }
 
             if (commands.containsKey(words[0])) {
 

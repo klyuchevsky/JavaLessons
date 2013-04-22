@@ -13,6 +13,7 @@ public class Sqrt implements Command {
         }
 
         if (stack.peek() < 0) {
+            System.out.println("sqrt" + stack.peek());
             System.out.println("Стек содержит отрицательное число, извлечение корня невозможно");
             return;
         }

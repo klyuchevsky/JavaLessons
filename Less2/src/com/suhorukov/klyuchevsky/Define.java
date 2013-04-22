@@ -17,9 +17,9 @@ public class Define implements Command {
                 return;
             }
             variables.put(words[1], Double.parseDouble(words[2]));
+            System.out.println("define" + words[1] + words[2]);
         } catch (NumberFormatException e) {
             System.out.println("Неверное значение переменной: " + words[2]);
-            System.out.println("Символ: " + words[1].charAt(0));
         }
     }
 }
