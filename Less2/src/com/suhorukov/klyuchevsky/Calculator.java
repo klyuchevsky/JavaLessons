@@ -28,20 +28,14 @@ public class Calculator {
         Scanner sc = new Scanner(System.in);
 
         if (args.length != 0) {
-            try (Reader r = new InputStreamReader(new BufferedInputStream(new FileInputStream(args[0])))) {
-                int currentChar = 0;
-                while (currentChar != -1) {
-                    currentChar = r.read();
-                    System.out.println((char) currentChar);
-                }
-                return;
+            try (FileInputStream stream = new FileInputStream(args[0])) {
+                sc = new Scanner(stream);
             } catch (FileNotFoundException e) {
                 System.out.println("Не удается найти файл");
             } catch (IOException e) {
                 e.printStackTrace();
             }
         }
-
 
         while (true) {
             string = sc.nextLine();

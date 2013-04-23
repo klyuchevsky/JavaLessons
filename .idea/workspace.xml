@@ -8,11 +8,11 @@
     <ignored path="JavaLessons.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/WordsFrequency.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1366479022353" ignored="false" />
-    <file path="/fragment.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1366625602338" ignored="false" />
-    <file path="/Dummy.txt" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1366619728230" ignored="false" />
+    <file path="/fragment.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1366684691420" ignored="false" />
+    <file path="/Dummy.txt" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1366684407910" ignored="false" />
     <file path="/Exc2.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1366532662430" ignored="false" />
     <file path="/Push.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1366625825811" ignored="false" />
-    <file path="/Calculator.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1366625468242" ignored="false" />
+    <file path="/Calculator.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1366687568270" ignored="false" />
     <file path="/Command.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1366546212734" ignored="false" />
     <file path="/Pop.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1366548658547" ignored="false" />
     <file path="/Add.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1366550933055" ignored="false" />
@@ -38,6 +38,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -74,7 +75,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -87,28 +87,10 @@
       <file leaf-file-name="Calculator.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Calculator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="6" selection-start="1621" selection-end="1621" vertical-scroll-proportion="0.69347495">
+            <state line="33" column="16" selection-start="1258" selection-end="1258" vertical-scroll-proportion="0.63884676">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Push.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Push.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="17" selection-start="496" selection-end="496" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WordsFrequency.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Less3/src/WordsFrequency.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="27" selection-start="1007" selection-end="1007" vertical-scroll-proportion="0.0">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -150,8 +132,8 @@
         <option value="$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/BasicOps.java" />
         <option value="$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Define.java" />
         <option value="$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Sqrt.java" />
-        <option value="$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Calculator.java" />
         <option value="$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Push.java" />
+        <option value="$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Calculator.java" />
       </list>
     </option>
   </component>
@@ -205,6 +187,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -267,8 +251,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -284,12 +266,12 @@
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
+    <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RunManager" selected="Application.Calculator">
     <configuration default="false" name="WordsFrequency" type="Application" factoryName="Application" temporary="true">
@@ -330,7 +312,7 @@
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="com.suhorukov.klyuchevsky.Calculator" />
       <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="input2.txt" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" value="" />
@@ -363,6 +345,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -389,19 +384,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -513,7 +495,11 @@
       <created>1366619766875</created>
       <updated>1366619766875</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Modify Less2: trying to work with file.">
+      <created>1366625929917</created>
+      <updated>1366625929917</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -607,7 +593,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Reformat code." />
+    <option name="LAST_COMMIT_MESSAGE" value="Modify Less2: trying to work with file." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -629,6 +615,7 @@
     <MESSAGE value="Modify Less2: implemented SQRT." />
     <MESSAGE value="Modify Less2: implemented all operations. Reformat code." />
     <MESSAGE value="Reformat code." />
+    <MESSAGE value="Modify Less2: trying to work with file." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -670,22 +657,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_17/src.zip!/java/util/Stack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="138" column="18" selection-start="3761" selection-end="3765" vertical-scroll-proportion="3.3823528">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Command.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="60" selection-start="197" selection-end="197" vertical-scroll-proportion="0.23529412">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Pop.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="39" selection-start="347" selection-end="347" vertical-scroll-proportion="0.3529412">
@@ -697,9 +668,7 @@
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.7.0_17/src.zip!/javax/xml/stream/events/Comment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="17" selection-start="412" selection-end="412" vertical-scroll-proportion="0.28462708">
-          <folding />
-        </state>
+        <state line="37" column="17" selection-start="412" selection-end="412" vertical-scroll-proportion="0.28462708" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Commentary.java">
@@ -722,9 +691,7 @@
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.7.0_17/src.zip!/java/lang/Character.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="500" column="29" selection-start="15073" selection-end="15073" vertical-scroll-proportion="-134.54477">
-          <folding />
-        </state>
+        <state line="500" column="29" selection-start="15073" selection-end="15073" vertical-scroll-proportion="-134.54477" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Diminution.java">
@@ -766,20 +733,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Add.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="41" selection-start="664" selection-end="664" vertical-scroll-proportion="0.64491653">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Less3/src/WordsFrequency.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="27" selection-start="1007" selection-end="1007" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Push.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="17" selection-start="496" selection-end="496" vertical-scroll-proportion="0.0">
@@ -787,9 +740,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Add.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="41" selection-start="664" selection-end="664" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_17/src.zip!/java/util/Scanner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="709" column="17" selection-start="28125" selection-end="28125" vertical-scroll-proportion="-12.305008">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Less3/src/WordsFrequency.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="61" selection-start="185" selection-end="194" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Command.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="60" selection-start="197" selection-end="197" vertical-scroll-proportion="0.20637329">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Calculator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="6" selection-start="1621" selection-end="1621" vertical-scroll-proportion="0.69347495">
+        <state line="33" column="16" selection-start="1258" selection-end="1258" vertical-scroll-proportion="0.63884676">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
