@@ -37,7 +37,6 @@ public class Calculator {
         }
 
         while (true) {
-//            System.out.println(sc.hasNextLine());
             if (sc.hasNextLine()) {
                 string = sc.nextLine();
             } else {
