@@ -28,17 +28,23 @@ public class Calculator {
         Scanner sc = new Scanner(System.in);
 
         if (args.length != 0) {
-            try (FileInputStream stream = new FileInputStream(args[0])) {
-                sc = new Scanner(stream);
+            File file = new File(args[0]);
+            try {
+                sc = new Scanner(file);
             } catch (FileNotFoundException e) {
                 System.out.println("Не удается найти файл");
-            } catch (IOException e) {
-                e.printStackTrace();
             }
         }
 
         while (true) {
-            string = sc.nextLine();
+//            System.out.println(sc.hasNextLine());
+            if (sc.hasNextLine()) {
+                string = sc.nextLine();
+            } else {
+                sc = new Scanner(System.in);
+                continue;
+            }
+
             string = string.replaceAll("\\s+", " ");
             string = string.trim();
 
