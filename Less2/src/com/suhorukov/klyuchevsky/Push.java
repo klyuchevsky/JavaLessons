@@ -6,7 +6,6 @@ import java.util.Stack;
 public class Push implements Command {
     public void execute(Stack<Double> stack, String string, Map<String, Double> variables) {
         int i;
-        string = string.replaceAll("\\s+", " ");
         String[] words = string.split(" ");
 
         if (words.length < 2) {

@@ -39,6 +39,9 @@ public class Calculator {
 
         while (true) {
             string = sc.nextLine();
+            string = string.replaceAll("\\s+", " ");
+            string = string.trim();
+
             if ("quit".equals(string)) {
                 break;
             }
