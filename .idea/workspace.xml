@@ -2,28 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56840984-e276-4d06-8d57-d9290c1b3ec0" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Add.java" afterPath="$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Add.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Calculator.java" afterPath="$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Calculator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Define.java" afterPath="$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Define.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Diminution.java" afterPath="$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Diminution.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Divide.java" afterPath="$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Divide.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Multiply.java" afterPath="$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Multiply.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Pop.java" afterPath="$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Pop.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Print.java" afterPath="$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Print.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Push.java" afterPath="$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Push.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Sqrt.java" afterPath="$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Sqrt.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="JavaLessons.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/WordsFrequency.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1366479022353" ignored="false" />
     <file path="/fragment.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1366713608616" ignored="false" />
-    <file path="/Dummy.txt" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1366714162892" ignored="false" />
+    <file path="/Dummy.txt" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1366876233808" ignored="false" />
     <file path="/Exc2.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1366532662430" ignored="false" />
-    <file path="/Push.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1366703386546" ignored="false" />
-    <file path="/Calculator.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1366712608376" ignored="false" />
+    <file path="/Push.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1366876849511" ignored="false" />
+    <file path="/Calculator.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1366877735805" ignored="false" />
     <file path="/Command.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1366546212734" ignored="false" />
-    <file path="/Pop.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1366548658547" ignored="false" />
-    <file path="/Add.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1366550933055" ignored="false" />
-    <file path="/Diminution.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1366555470048" ignored="false" />
-    <file path="/Multiply.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1366556450463" ignored="false" />
-    <file path="/Divide.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1366556495068" ignored="false" />
+    <file path="/Pop.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1366876280265" ignored="false" />
+    <file path="/Add.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1366877235275" ignored="false" />
+    <file path="/Diminution.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1366877761313" ignored="false" />
+    <file path="/Multiply.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1366877902383" ignored="false" />
+    <file path="/Divide.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1366877775143" ignored="false" />
     <file path="/Comment.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1366599419495" ignored="false" />
-    <file path="/Print.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1366600401889" ignored="false" />
+    <file path="/Print.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1366877087654" ignored="false" />
     <file path="/BasicOps.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1366600758310" ignored="false" />
-    <file path="/Define.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1366616944531" ignored="false" />
-    <file path="/Sqrt.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1366617025692" ignored="false" />
+    <file path="/Define.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1366877990951" ignored="false" />
+    <file path="/Sqrt.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1366877127302" ignored="false" />
     <file path="/CalculatorTest.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1366710790625" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -85,10 +94,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Calculator.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Calculator.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Calculator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="22" selection-start="1335" selection-end="1335" vertical-scroll-proportion="0.095744684">
+            <state line="50" column="55" selection-start="1705" selection-end="1705" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -99,8 +108,19 @@
       <file leaf-file-name="CalculatorTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/CalculatorTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="0" selection-start="90" selection-end="90" vertical-scroll-proportion="0.0">
+            <state line="7" column="10" selection-start="101" selection-end="101" vertical-scroll-proportion="0.0">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Define.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Define.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="49" selection-start="931" selection-end="931" vertical-scroll-proportion="0.6707132">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -129,21 +149,21 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Command.java" />
-        <option value="$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Pop.java" />
-        <option value="$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Add.java" />
-        <option value="$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Diminution.java" />
-        <option value="$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Multiply.java" />
-        <option value="$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Divide.java" />
         <option value="$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Comment.java" />
         <option value="$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Comnt.java" />
         <option value="$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Commentary.java" />
-        <option value="$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Print.java" />
         <option value="$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/BasicOps.java" />
-        <option value="$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Sqrt.java" />
-        <option value="$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Push.java" />
         <option value="$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/CalculatorTest.java" />
-        <option value="$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Define.java" />
+        <option value="$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Pop.java" />
+        <option value="$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Push.java" />
+        <option value="$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Print.java" />
+        <option value="$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Sqrt.java" />
+        <option value="$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Add.java" />
         <option value="$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Calculator.java" />
+        <option value="$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Diminution.java" />
+        <option value="$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Divide.java" />
+        <option value="$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Multiply.java" />
+        <option value="$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Define.java" />
       </list>
     </option>
   </component>
@@ -197,7 +217,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -236,6 +255,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -324,6 +344,29 @@
       </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="CalculatorTest" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="Less2" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.suhorukov.klyuchevsky" />
+      <option name="MAIN_CLASS_NAME" value="com.suhorukov.klyuchevsky.CalculatorTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
@@ -418,16 +461,18 @@
       <patterns />
       <method />
     </configuration>
-    <list size="3">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Application.WordsFrequency" />
       <item index="1" class="java.lang.String" itemvalue="Application.Exc2" />
       <item index="2" class="java.lang.String" itemvalue="Application.Calculator" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.CalculatorTest" />
     </list>
     <recent_temporary>
-      <list size="3">
+      <list size="4">
         <item index="0" class="java.lang.String" itemvalue="Application.Calculator" />
-        <item index="1" class="java.lang.String" itemvalue="Application.WordsFrequency" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Exc2" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.CalculatorTest" />
+        <item index="2" class="java.lang.String" itemvalue="Application.WordsFrequency" />
+        <item index="3" class="java.lang.String" itemvalue="Application.Exc2" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -511,7 +556,11 @@
       <created>1366714173813</created>
       <updated>1366714173813</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Modify Less2: reformat">
+      <created>1366714372798</created>
+      <updated>1366714372798</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -536,7 +585,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1885" height="1176" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32810968" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -546,14 +595,13 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32810968" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32875368" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32777232" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32810968" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2484915" sideWeight="0.6712463" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32777232" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32908913" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2484915" sideWeight="0.6722277" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32777232" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -562,6 +610,7 @@
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32908913" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -606,7 +655,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modify Less2: implemented reading from file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modify Less2: reformat" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -632,6 +681,7 @@
     <MESSAGE value="Modify Less2: trying to give file to scanner." />
     <MESSAGE value="Modify Less2: fix error when command contain consecutive spaces" />
     <MESSAGE value="Modify Less2: implemented reading from file" />
+    <MESSAGE value="Modify Less2: reformat" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -673,46 +723,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_17/src.zip!/java/lang/Character.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="500" column="29" selection-start="15073" selection-end="15073" vertical-scroll-proportion="-134.54477" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Diminution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="1" selection-start="670" selection-end="670" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Multiply.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="26" selection-start="646" selection-end="646" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Sqrt.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="40" selection-start="654" selection-end="654" vertical-scroll-proportion="0.54172987" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Divide.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="8" selection-start="392" selection-end="392" vertical-scroll-proportion="0.30955994" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Add.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="41" selection-start="664" selection-end="664" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Less3/src/WordsFrequency.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="61" selection-start="185" selection-end="194" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Command.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="60" selection-start="197" selection-end="197" vertical-scroll-proportion="0.20637329" />
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.7.0_17/src.zip!/java/util/Scanner.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="654" column="35" selection-start="26038" selection-end="26051" vertical-scroll-proportion="15.99393">
@@ -722,35 +732,64 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Less1/src/com/suhorukov/klyuchevsky/Exc2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="26" selection-start="373" selection-end="375" vertical-scroll-proportion="0.3353566">
-          <folding />
-        </state>
+        <state line="14" column="26" selection-start="373" selection-end="375" vertical-scroll-proportion="0.3353566" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Less1/src/com/suhorukov/klyuchevsky/Ecx2Interface.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="18" selection-start="191" selection-end="191" vertical-scroll-proportion="0.23216996">
-          <folding />
-        </state>
+        <state line="9" column="18" selection-start="191" selection-end="191" vertical-scroll-proportion="0.23216996" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Less1/src/com/suhorukov/klyuchevsky/Ecx2ImplementInterface.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="13" selection-start="76" selection-end="76" vertical-scroll-proportion="0.103186645">
+        <state line="4" column="13" selection-start="76" selection-end="76" vertical-scroll-proportion="0.103186645" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Pop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="50" selection-start="382" selection-end="382" vertical-scroll-proportion="0.20502512">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Push.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="7" selection-start="90" selection-end="90" vertical-scroll-proportion="0.103186645">
+        <state line="12" column="0" selection-start="359" selection-end="359" vertical-scroll-proportion="0.2837633">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Define.java">
+    <entry file="file://$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Print.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="56" selection-start="721" selection-end="721" vertical-scroll-proportion="0.49013656">
+        <state line="7" column="33" selection-start="249" selection-end="249" vertical-scroll-proportion="0.15477997">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Sqrt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="32" selection-start="266" selection-end="266" vertical-scroll-proportion="0.20637329">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Add.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="29" selection-start="280" selection-end="280" vertical-scroll-proportion="0.23216996">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Commentary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="33" selection-start="264" selection-end="264" vertical-scroll-proportion="0.20637329">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Calculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="55" selection-start="1705" selection-end="1705" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -759,14 +798,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/CalculatorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="90" selection-end="90" vertical-scroll-proportion="0.0">
+        <state line="7" column="10" selection-start="101" selection-end="101" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Calculator.java">
+    <entry file="file://$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Diminution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="22" selection-start="1335" selection-end="1335" vertical-scroll-proportion="0.095744684">
+        <state line="10" column="29" selection-start="287" selection-end="287" vertical-scroll-proportion="0.23216996">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Divide.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="29" selection-start="283" selection-end="283" vertical-scroll-proportion="0.23216996">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Multiply.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="29" selection-start="285" selection-end="285" vertical-scroll-proportion="0.23216996">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Define.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="49" selection-start="931" selection-end="931" vertical-scroll-proportion="0.6707132">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

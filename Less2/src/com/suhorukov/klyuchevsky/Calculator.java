@@ -48,6 +48,7 @@ public class Calculator {
             string = string.trim();
 
             if ("quit".equals(string)) {
+                System.out.println("Выход из приложения");
                 break;
             }
 

@@ -7,6 +7,9 @@ public class Divide implements Command {
     public void execute(Stack<Double> stack, String string, Map<String, Double> variables) {
         double a;
         double b;
+
+        System.out.println("/");
+
         if (stack.size() == 0) {
             System.out.println("Стек пуст, невозможно выполнить операцию");
             return;

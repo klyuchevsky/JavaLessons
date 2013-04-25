@@ -7,6 +7,10 @@ public class Push implements Command {
     public void execute(Stack<Double> stack, String string, Map<String, Double> variables) {
         int i;
         String[] words = string.split(" ");
+        for (String str : words) {
+            System.out.print(str + " ");
+        }
+        System.out.print("\n");
 
         if (words.length < 2) {
             System.out.println("Недостаточно параметров, введите значение для помещения в стек");
