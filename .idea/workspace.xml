@@ -9,7 +9,7 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/WordsFrequency.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1366479022353" ignored="false" />
     <file path="/fragment.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1366713608616" ignored="false" />
-    <file path="/Dummy.txt" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1366878324059" ignored="false" />
+    <file path="/Dummy.txt" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1366878688762" ignored="false" />
     <file path="/Exc2.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1366532662430" ignored="false" />
     <file path="/Push.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1366876849511" ignored="false" />
     <file path="/Calculator.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1366877735805" ignored="false" />
@@ -108,7 +108,7 @@
       <file leaf-file-name="Define.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Define.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="60" selection-start="321" selection-end="321" vertical-scroll-proportion="0.20637329">
+            <state line="25" column="10" selection-start="876" selection-end="876" vertical-scroll-proportion="0.64491653">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -564,7 +564,11 @@
       <created>1366878336946</created>
       <updated>1366878336946</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Modify Less2: print all commands before execute.">
+      <created>1366878701589</created>
+      <updated>1366878701589</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -831,7 +835,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Define.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="60" selection-start="321" selection-end="321" vertical-scroll-proportion="0.20637329">
+        <state line="25" column="10" selection-start="876" selection-end="876" vertical-scroll-proportion="0.64491653">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
