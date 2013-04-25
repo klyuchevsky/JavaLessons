@@ -53,13 +53,14 @@ public class Calculator {
             }
 
             String[] words = string.split(" ");
+            String cmdName = words[0];
 
-            if (commands.containsKey(words[0])) {
+            if (commands.containsKey(cmdName)) {
 
-                Command x = commands.get(words[0]);
+                Command x = commands.get(cmdName);
                 x.execute(stack, string, variables);
 
-            } else System.out.println("Неизвестная команда: " + words[0]);
+            } else System.out.println("Неизвестная команда: " + cmdName);
 
             System.out.println(stack.toString());
             System.out.println(variables);

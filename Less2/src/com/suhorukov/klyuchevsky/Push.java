@@ -6,13 +6,14 @@ import java.util.Stack;
 public class Push implements Command {
     public void execute(Stack<Double> stack, String string, Map<String, Double> variables) {
         int i;
+        int enoughParam = 2;
         String[] words = string.split(" ");
         for (String str : words) {
             System.out.print(str + " ");
         }
         System.out.print("\n");
 
-        if (words.length < 2) {
+        if (words.length < enoughParam) {
             System.out.println("Недостаточно параметров, введите значение для помещения в стек");
             return;
         }
