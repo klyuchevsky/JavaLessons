@@ -6,7 +6,7 @@ import java.util.Stack;
 public class Define implements Command {
     public void execute(Stack<Double> stack, String string, Map<String, Double> variables) {
         String words[] = string.split(" ");
-        System.out.println(words[0] + words[1] + words[2]);
+        System.out.println(words[0] + " " + words[1] + " " + words[2]);
         try {
             if (words.length < 3) {
                 System.out.println("Введено недостаточно параметров");
