@@ -1,0 +1,10 @@
+push=new Push());
+pop=new Pop());
++=new Add());
+-=new Diminution());
+*=new Multiply());
+/=new Divide());
+sqrt=new Sqrt());
+#=new Commentary());
+print=new Print());
+define=new Define());
