@@ -1,32 +1,41 @@
 package com.suhorukov.klyuchevsky;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Scanner;
-import java.util.Stack;
+import java.io.*;
+import java.util.*;
 
 public class CalculatorFactory {
+    static Properties prop = new Properties();
+
+    static {
+        try {
+            File propFile = new File("Less4\\commands.properties");
+            FileInputStream in = new FileInputStream(propFile);
+            prop.load(in);
+            in.close();
+        } catch (IOException e) {
+            System.out.println("Ошибка чтения");
+        }
+    }
+
     public static void main(String[] args) {
-        Stack<Double> stack = new Stack<>(); // stack to store values
-        Map<String, Command> commands = new HashMap<>(); // hashmap to store commands
-        String string; // string to store current command
-        Map<String, Double> variables = new HashMap<>(); // hashmap to store variables
+        Stack<Double> stack = new Stack<>();              // stack to store values
+        Map<String, Command> commands = new HashMap<>();  // hashmap to store commands
+        String string;                                    // string to store current command
+        Map<String, Double> variables = new HashMap<>();  // hashmap to store variables
 
-        CalculatorFactory.class.getResourceAsStream("Less4\\commands.properties");
-
-
-        commands.put("push", new Push());
-        commands.put("pop", new Pop());
-        commands.put("+", new Add());
-        commands.put("-", new Diminution());
-        commands.put("*", new Multiply());
-        commands.put("/", new Divide());
-        commands.put("sqrt", new Sqrt());
-        commands.put("#", new Commentary());
-        commands.put("print", new Print());
-        commands.put("define", new Define());
+        //Reading commands set from properties file
+        for (Map.Entry<Object, Object> entry : prop.entrySet()) {
+            try {
+                String name = entry.getValue().toString();
+                String className = entry.getKey().toString();
+                Class classFile = Class.forName(name);
+                Command cmd = (Command) classFile.newInstance();
+                commands.put(className, cmd);
+            } catch (InstantiationException | IllegalAccessException | ClassNotFoundException e) {
+                System.out.println("Не удалось создать класс");
+                e.printStackTrace();
+            }
+        }
 
         System.out.println(commands.keySet());
         Scanner sc = new Scanner(System.in);
@@ -60,10 +69,8 @@ public class CalculatorFactory {
             String cmdName = words[0];
 
             if (commands.containsKey(cmdName)) {
-
                 Command x = commands.get(cmdName);
                 x.execute(stack, string, variables);
-
             } else System.out.println("Неизвестная команда: " + cmdName);
 
             System.out.println(stack.toString());
