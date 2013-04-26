@@ -1,0 +1,17 @@
+define a 1
+define b -8
+define c 12
+push 2 a
+*
+push 4 a c
+*
+*
+push b b
+*
+-
+sqrt
+push b
+push 0
+-
+-
+/
