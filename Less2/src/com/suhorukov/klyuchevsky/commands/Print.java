@@ -1,4 +1,6 @@
-package com.suhorukov.klyuchevsky;
+package com.suhorukov.klyuchevsky.commands;
+
+import com.suhorukov.klyuchevsky.Command;
 
 import java.util.Map;
 import java.util.Stack;

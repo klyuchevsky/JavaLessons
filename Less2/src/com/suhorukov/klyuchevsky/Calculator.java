@@ -1,5 +1,7 @@
 package com.suhorukov.klyuchevsky;
 
+import com.suhorukov.klyuchevsky.commands.*;
+
 import java.io.*;
 import java.util.HashMap;
 import java.util.Map;
