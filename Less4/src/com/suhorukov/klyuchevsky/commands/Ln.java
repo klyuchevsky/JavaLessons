@@ -1,23 +1,20 @@
-package com.suhorukov.klyuchevsky;
+package com.suhorukov.klyuchevsky.commands;
+
+import com.suhorukov.klyuchevsky.Command;
 
 import java.util.Map;
 import java.util.Stack;
 
-public class Exp implements Command {
+public class Ln implements Command {
     public void execute(Stack<Double> stack, String string, Map<String, Double> variables) {
         double a;
         int empty = 0;
-        System.out.println("exp");
+        System.out.println("ln");
         if (stack.size() == empty) {
             System.out.println("Стек пуст, невозможно выполнить операцию");
             return;
         }
         a = stack.pop();
-        stack.push(StrictMath.exp(a));
+        stack.push(StrictMath.log(a));
     }
 }
-
-
-
-
-
