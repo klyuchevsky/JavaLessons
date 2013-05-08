@@ -6,7 +6,12 @@ import java.util.Map;
 import java.util.Stack;
 
 public class Divide implements Command {
-    public void execute(Stack<Double> stack, String string, Map<String, Double> variables) {
+    @In(getArg = Arg.STACK)
+    private Stack<Double> stack;
+    @In(getArg = Arg.VARIABLES)
+    private Map<String, Double> variables;
+
+    public void execute(String string) {
         double a;
         double b;
         int empty = 0;

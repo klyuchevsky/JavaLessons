@@ -6,7 +6,12 @@ import java.util.Map;
 import java.util.Stack;
 
 public class Pop implements Command {
-    public void execute(Stack<Double> stack, String string, Map<String, Double> map) {
+    @In(getArg = Arg.STACK)
+    private Stack<Double> stack;
+    @In(getArg = Arg.VARIABLES)
+    private Map<String, Double> variables;
+
+    public void execute(String string) {
         System.out.println("pop");
         if (!stack.empty()) {
             stack.pop();

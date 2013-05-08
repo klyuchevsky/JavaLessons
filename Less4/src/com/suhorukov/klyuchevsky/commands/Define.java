@@ -6,7 +6,12 @@ import java.util.Map;
 import java.util.Stack;
 
 public class Define implements Command {
-    public void execute(Stack<Double> stack, String string, Map<String, Double> variables) {
+    @In(getArg = Arg.STACK)
+    private Stack<Double> stack;
+    @In(getArg = Arg.VARIABLES)
+    private Map<String, Double> variables;
+
+    public void execute(String string) {
         int enoughParam = 3;
         int varFirstChar = 0;
         String words[] = string.split(" ");

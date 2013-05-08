@@ -1,14 +1,16 @@
 package com.suhorukov.klyuchevsky;
 
+import com.suhorukov.klyuchevsky.commands.*;
+
 import java.io.*;
 import java.util.*;
+
 
 public class CalculatorFactory {
 
     public static void main(String[] args)
             throws IOException {
         Stack<Double> stack = new Stack<>();              // stack to store values
-
         String string;                                    // string to store current command
         Map<String, Double> variables = new HashMap<>();  // hashmap to store variables
 
@@ -47,7 +49,7 @@ public class CalculatorFactory {
             String cmdName = words[0];
             Command command = factory.getCommandByName(cmdName);
             if (cmdName != null) {
-                command.execute(stack, string, variables);
+                command.execute(string);
             } else {
                 System.out.println("Неизвестная команда: " + cmdName);
             }
