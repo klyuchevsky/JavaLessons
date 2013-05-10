@@ -1,23 +1,25 @@
 package com.suhorukov.klyuchevsky;
 
-import com.suhorukov.klyuchevsky.commands.*;
-
 import java.io.*;
 import java.util.*;
 
-
 public class CalculatorFactory {
+
+    //    private Stack<Double> stack = new Stack<>();             // stack to store values
+//    private Map<String, Double> variables = new HashMap<>(); // hashmap to store variables
+    private Factory factory;                                 // factory of calculator commands
+
+    public CalculatorFactory()
+            throws IOException {
+        factory = new Factory();
+    }
 
     public static void main(String[] args)
             throws IOException {
-        Stack<Double> stack = new Stack<>();              // stack to store values
-        String string;                                    // string to store current command
-        Map<String, Double> variables = new HashMap<>();  // hashmap to store variables
+        String string; // string to store current command
+        CalculatorFactory calc = new CalculatorFactory();
 
-        //Reading commands set from properties file and create their objects
-        Factory factory = new Factory();
-
-//        System.out.println(commands.keySet());
+        System.out.println(calc.factory.commands.keySet());
         Scanner sc = new Scanner(System.in);
 
         if (args.length != 0) {
@@ -47,15 +49,15 @@ public class CalculatorFactory {
 
             String[] words = string.split(" ");
             String cmdName = words[0];
-            Command command = factory.getCommandByName(cmdName);
+            Command command = calc.factory.getCommandByName(cmdName);
             if (cmdName != null) {
                 command.execute(string);
             } else {
                 System.out.println("Неизвестная команда: " + cmdName);
             }
 
-            System.out.println(stack.toString());
-            System.out.println(variables);
+            System.out.println(calc.factory.stack.toString());
+            System.out.println(calc.factory.variables);
         }
     }
 }

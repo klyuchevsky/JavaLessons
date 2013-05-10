@@ -1,15 +1,14 @@
 package com.suhorukov.klyuchevsky.commands;
 
+import com.suhorukov.klyuchevsky.Arg;
 import com.suhorukov.klyuchevsky.Command;
+import com.suhorukov.klyuchevsky.In;
 
-import java.util.Map;
 import java.util.Stack;
 
 public class Multiply implements Command {
     @In(getArg = Arg.STACK)
     private Stack<Double> stack;
-    @In(getArg = Arg.VARIABLES)
-    private Map<String, Double> variables;
 
     public void execute(String string) {
         double a;
