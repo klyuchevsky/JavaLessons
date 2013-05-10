@@ -10,13 +10,12 @@ import java.util.Stack;
 
 public class Factory {
 
-    Stack<Double> stack = new Stack<>();
-    Map<String, Double> variables = new HashMap<>();
-    Map<String, Command> commands = new HashMap<>();
+    Stack<Double> stack = new Stack<>();             // stack to store values
+    Map<String, Double> variables = new HashMap<>(); // hashmap to store variables
+    Map<String, Command> commands = new HashMap<>(); // hashmap to store commands
 
     public Factory()
             throws IOException {
-
         Properties prop = new Properties();
 
         // Reading properties from file

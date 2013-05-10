@@ -4,12 +4,9 @@ import java.io.*;
 import java.util.*;
 
 public class CalculatorFactory {
+    private Factory factory; // factory of calculator commands
 
-    //    private Stack<Double> stack = new Stack<>();             // stack to store values
-//    private Map<String, Double> variables = new HashMap<>(); // hashmap to store variables
-    private Factory factory;                                 // factory of calculator commands
-
-    public CalculatorFactory()
+    CalculatorFactory()
             throws IOException {
         factory = new Factory();
     }
