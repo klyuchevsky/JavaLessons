@@ -1,3 +1,5 @@
+package com.suhorukov.klyuchevsky;
+
 import java.io.*;
 import java.util.*;
 
