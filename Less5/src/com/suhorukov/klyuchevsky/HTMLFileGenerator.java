@@ -58,7 +58,6 @@ public class HTMLFileGenerator {
             out.write("<tr><td><h3>Имя</h3></td><td><h3>Размер</h3></td><td><h3>Последнее изменение</h3></td></tr>\n");
             out.write("<tr><td>" + "<a href=" + '"' + folder.getParent() + '"' + ">...</a></td><td></td><td></td></tr>\n");
             for (File file : files) {
-
                 out.write("<tr><td><a href=" + '"' + file.getName() + '"' + ">" + file.getName() + "</a></td>");
                 out.write("<td>");
                 if (file.isFile()) {

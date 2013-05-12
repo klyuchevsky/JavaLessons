@@ -2,15 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56840984-e276-4d06-8d57-d9290c1b3ec0" name="Default" comment="">
-      <change type="MOVED" beforePath="C:\Documents and Settings\Svetlana.SVETKA\IdeaProjects\JavaLessons\Less3\src\WordsFrequency.java" afterPath="$PROJECT_DIR$/Less3/src/com/suhorukov/klyuchevsky/WordsFrequency.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/ExceptionGenerator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/ExceptionImplementation.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/MyException.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/HTMLFileGenerator.java" afterPath="$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/HTMLFileGenerator.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="JavaLessons.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/WordsFrequency.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1368298383421" ignored="false" />
-    <file path="/fragment.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1368298225703" ignored="false" />
-    <file path="/Dummy.txt" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1368281733656" ignored="false" />
+    <file path="/fragment.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1368339424812" ignored="false" />
+    <file path="/Dummy.txt" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1368338819921" ignored="false" />
     <file path="/Exc2.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1366532662430" ignored="false" />
     <file path="/Push.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1368204716338" ignored="false" />
     <file path="/Calculator.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1366894169256" ignored="false" />
@@ -33,6 +35,8 @@
     <file path="/In.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1368194401828" ignored="false" />
     <file path="/Arg.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1368194327968" ignored="false" />
     <file path="/HTMLFileGenerator.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1368297184234" ignored="false" />
+    <file path="/ExceptionGenerator.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1368339329187" ignored="false" />
+    <file path="/ExceptionImplementation.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1368339752109" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +51,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -83,7 +88,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -96,20 +100,36 @@
       <file leaf-file-name="HTMLFileGenerator.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/HTMLFileGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="54" selection-start="1723" selection-end="1723" vertical-scroll-proportion="0.0">
+            <state line="17" column="34" selection-start="438" selection-end="438" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#803#1278#0" expanded="true" />
-                <element signature="e#1267#1268#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WordsFrequency.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Less3/src/com/suhorukov/klyuchevsky/WordsFrequency.java">
+      <file leaf-file-name="ExceptionImplementation.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/ExceptionImplementation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="0" selection-start="1194" selection-end="1236" vertical-scroll-proportion="0.307971">
+            <state line="24" column="8" selection-start="449" selection-end="449" vertical-scroll-proportion="0.49695495">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ExceptionGenerator.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/ExceptionGenerator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="14" selection-start="249" selection-end="249" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyException.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/MyException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="22" selection-start="83" selection-end="83" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -138,9 +158,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Less4/src/com/suhorukov/klyuchevsky/commands/Print.java" />
-        <option value="$PROJECT_DIR$/Less4/src/com/suhorukov/klyuchevsky/commands/Divide.java" />
-        <option value="$PROJECT_DIR$/Less4/src/com/suhorukov/klyuchevsky/commands/Ln.java" />
         <option value="$PROJECT_DIR$/Less4/src/com/suhorukov/klyuchevsky/commands/Diminution.java" />
         <option value="$PROJECT_DIR$/Less4/src/com/suhorukov/klyuchevsky/commands/Exp.java" />
         <option value="$PROJECT_DIR$/Less4/src/com/suhorukov/klyuchevsky/commands/Multiply.java" />
@@ -152,8 +169,11 @@
         <option value="$PROJECT_DIR$/Less4/src/com/suhorukov/klyuchevsky/commands/Push.java" />
         <option value="$PROJECT_DIR$/Less4/src/com/suhorukov/klyuchevsky/CalculatorFactory.java" />
         <option value="$PROJECT_DIR$/Less4/src/com/suhorukov/klyuchevsky/Factory.java" />
-        <option value="$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/HTMLFileGenerator.java" />
         <option value="$PROJECT_DIR$/Less3/src/com/suhorukov/klyuchevsky/WordsFrequency.java" />
+        <option value="$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/HTMLFileGenerator.java" />
+        <option value="$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/MyException.java" />
+        <option value="$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/ExceptionGenerator.java" />
+        <option value="$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/ExceptionImplementation.java" />
       </list>
     </option>
   </component>
@@ -210,6 +230,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -248,7 +269,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -268,19 +288,19 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="true" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="MemberChooser.showClasses" value="true" />
     <property name="FullScreen" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.suhorukov.klyuchevsky" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\olga_golneva\IdeaProjects\JavaLessons\Less4\src\com\suhorukov\klyuchevsky" />
@@ -288,6 +308,7 @@
       <recent name="C:\Users\olga_golneva\IdeaProjects\JavaLessons\Less3" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.suhorukov.klyuchevsky" />
       <recent name="com.suhorukov.klyuchevsky.commands" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -426,19 +447,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -465,6 +473,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -640,7 +661,11 @@
       <created>1368206466854</created>
       <updated>1368206466854</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Modify Less5. Generate HTML file">
+      <created>1368298600109</created>
+      <updated>1368298600109</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -665,7 +690,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1288" height="998" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32781065" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -675,13 +700,12 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32781065" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33846155" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32781065" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22528364" sideWeight="0.6840237" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31597632" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22528364" sideWeight="0.6840237" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31597632" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -693,6 +717,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3270366" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33846155" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -738,7 +763,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modify Less4. Work with annotations.&#10;Working copy." />
+    <option name="LAST_COMMIT_MESSAGE" value="Modify Less5. Generate HTML file" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -772,6 +797,7 @@
     <MESSAGE value="Modify Less4. Reading commands set from properties file" />
     <MESSAGE value="Modify Less2. Add JUnit test." />
     <MESSAGE value="Modify Less4. Work with annotations.&#10;Working copy." />
+    <MESSAGE value="Modify Less5. Generate HTML file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -813,23 +839,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/commands.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/test/CalculatorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="13" selection-start="238" selection-end="238" vertical-scroll-proportion="0.123636365" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Less4/src/com/suhorukov/klyuchevsky/commands/Add.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="23" selection-start="364" selection-end="364" vertical-scroll-proportion="0.3090909">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Less4/src/com/suhorukov/klyuchevsky/commands/Multiply.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="32" selection-start="291" selection-end="291" vertical-scroll-proportion="0.18545455">
@@ -858,15 +867,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="12" selection-start="48" selection-end="48" vertical-scroll-proportion="0.0">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Less4/src/com/suhorukov/klyuchevsky/In.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="18" selection-start="281" selection-end="281" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -904,25 +904,47 @@
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.7.0_17/src.zip!/java/io/FileSystem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="109" column="28" selection-start="2648" selection-end="2648" vertical-scroll-proportion="0.020706456">
+        <state line="109" column="28" selection-start="2648" selection-end="2648" vertical-scroll-proportion="0.020706456" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Less3/src/com/suhorukov/klyuchevsky/WordsFrequency.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="36" selection-start="1273" selection-end="1273" vertical-scroll-proportion="0.33876812" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Less4/src/com/suhorukov/klyuchevsky/In.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="18" selection-start="281" selection-end="281" vertical-scroll-proportion="0.12423874">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/MyException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="22" selection-start="83" selection-end="83" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/HTMLFileGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="54" selection-start="1723" selection-end="1723" vertical-scroll-proportion="0.0">
+        <state line="17" column="34" selection-start="438" selection-end="438" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#803#1278#0" expanded="true" />
-            <element signature="e#1267#1268#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Less3/src/com/suhorukov/klyuchevsky/WordsFrequency.java">
+    <entry file="file://$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/ExceptionGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="1194" selection-end="1236" vertical-scroll-proportion="0.307971">
+        <state line="7" column="14" selection-start="249" selection-end="249" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/ExceptionImplementation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="8" selection-start="449" selection-end="449" vertical-scroll-proportion="0.49695495">
           <folding />
         </state>
       </provider>
