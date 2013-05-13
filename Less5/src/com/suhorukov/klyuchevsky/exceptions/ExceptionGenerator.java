@@ -1,4 +1,4 @@
-package com.suhorukov.klyuchevsky;
+package com.suhorukov.klyuchevsky.exceptions;
 
 public interface ExceptionGenerator {
     void generateNullPointerException();
