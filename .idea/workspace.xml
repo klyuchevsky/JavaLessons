@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="56840984-e276-4d06-8d57-d9290c1b3ec0" name="Default" comment="Modify Less5. Add exceptions task.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/exceptions/ExceptionDemonstration.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/exceptions/ExceptionImplementation.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/exceptions/MyException.java" />
-      <change type="DELETED" beforePath="C:\Users\klyuchevsky\IdeaProjects\JavaLessons\Less5\src\com\suhorukov\klyuchevsky\ExceptionImplementation.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\klyuchevsky\IdeaProjects\JavaLessons\Less5\src\com\suhorukov\klyuchevsky\MyException.java" afterPath="" />
-      <change type="MOVED" beforePath="C:\Users\klyuchevsky\IdeaProjects\JavaLessons\Less5\src\com\suhorukov\klyuchevsky\ExceptionGenerator.java" afterPath="$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/exceptions/ExceptionGenerator.java" />
+    <list default="true" id="56840984-e276-4d06-8d57-d9290c1b3ec0" name="Default" comment="Modify Less5. Add HTTP-server.">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/HTTPServer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/SocketProcessor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/HTMLFileGenerator.java" afterPath="$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/HTMLFileGenerator.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="JavaLessons.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/WordsFrequency.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1368298383421" ignored="false" />
-    <file path="/fragment.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1368339424812" ignored="false" />
-    <file path="/Dummy.txt" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1368430934104" ignored="false" />
+    <file path="/fragment.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1368505801706" ignored="false" />
+    <file path="/Dummy.txt" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1368515926743" ignored="false" />
     <file path="/Exc2.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1366532662430" ignored="false" />
     <file path="/Push.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1368204716338" ignored="false" />
     <file path="/Calculator.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1366894169256" ignored="false" />
@@ -36,11 +33,13 @@
     <file path="/Factory.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1368206854901" ignored="false" />
     <file path="/In.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1368194401828" ignored="false" />
     <file path="/Arg.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1368194327968" ignored="false" />
-    <file path="/HTMLFileGenerator.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1368297184234" ignored="false" />
+    <file path="/HTMLFileGenerator.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1368500525412" ignored="false" />
     <file path="/ExceptionGenerator.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1368339329187" ignored="false" />
-    <file path="/ExceptionImplementation.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1368430095226" ignored="false" />
+    <file path="/ExceptionImplementation.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1368444683474" ignored="false" />
     <file path="/ExceptionDemonstration.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1368430202628" ignored="false" />
     <file path="/MyException.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1368430070668" ignored="false" />
+    <file path="/HTTPServer.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1368505304938" ignored="false" />
+    <file path="/SocketProcessor.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1368501720555" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +54,6 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -92,6 +90,7 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -104,17 +103,33 @@
       <file leaf-file-name="HTMLFileGenerator.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/HTMLFileGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="43" selection-start="1004" selection-end="1004" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="8" column="19" selection-start="206" selection-end="206" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#829#1352#0" expanded="true" />
+                <element signature="e#1337#1338#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ExceptionImplementation.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/exceptions/ExceptionImplementation.java">
+      <file leaf-file-name="HTTPServer.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/HTTPServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="32" selection-start="327" selection-end="327" vertical-scroll-proportion="0.31432974">
-              <folding />
+            <state line="8" column="10" selection-start="239" selection-end="239" vertical-scroll-proportion="0.20955315">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SocketProcessor.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/SocketProcessor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="41" column="46" selection-start="1296" selection-end="1296" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -142,8 +157,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Less4/src/com/suhorukov/klyuchevsky/commands/Pop.java" />
-        <option value="$PROJECT_DIR$/Less4/src/com/suhorukov/klyuchevsky/commands/Sqrt.java" />
         <option value="$PROJECT_DIR$/Less4/src/com/suhorukov/klyuchevsky/commands/Define.java" />
         <option value="$PROJECT_DIR$/Less4/src/com/suhorukov/klyuchevsky/commands/Add.java" />
         <option value="$PROJECT_DIR$/Less4/src/com/suhorukov/klyuchevsky/Arg.java" />
@@ -151,20 +164,22 @@
         <option value="$PROJECT_DIR$/Less4/src/com/suhorukov/klyuchevsky/CalculatorFactory.java" />
         <option value="$PROJECT_DIR$/Less4/src/com/suhorukov/klyuchevsky/Factory.java" />
         <option value="$PROJECT_DIR$/Less3/src/com/suhorukov/klyuchevsky/WordsFrequency.java" />
-        <option value="$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/HTMLFileGenerator.java" />
         <option value="$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/ExceptionGenerator.java" />
         <option value="$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/MyException.java" />
         <option value="$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/ExceptionImplementation.java" />
         <option value="$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/ExceptionDemonstration.java" />
         <option value="$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/exceptions/ExceptionDemonstration.java" />
         <option value="$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/exceptions/ExceptionImplementation.java" />
+        <option value="$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/SocketProcessor.java" />
+        <option value="$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/HTMLFileGenerator.java" />
+        <option value="$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/HTTPServer.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1885" />
+    <option name="width" value="1936" />
     <option name="height" value="1176" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -272,12 +287,12 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="true" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="MemberChooser.showClasses" value="true" />
     <property name="FullScreen" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -299,7 +314,7 @@
       <recent name="C:\Documents and Settings\Svetlana.SVETKA\IdeaProjects\JavaLessons" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ExceptionDemonstration">
+  <component name="RunManager" selected="Application.HTMLFileGenerator">
     <configuration default="false" name="HTMLFileGenerator" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -309,7 +324,7 @@
       </extension>
       <option name="MAIN_CLASS_NAME" value="com.suhorukov.klyuchevsky.HTMLFileGenerator" />
       <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="&quot;C:\Documents and Settings\Svetlana.SVETKA\IdeaProjects\JavaLessons&quot;" />
+      <option name="PROGRAM_PARAMETERS" value="&quot;C:\Users\klyuchevsky\IdeaProjects\JavaLessons&quot;" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" value="" />
@@ -335,29 +350,6 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="Less3" />
       <envs />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="CalculatorTest" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="Less2" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="PACKAGE_NAME" value="com.suhorukov.klyuchevsky.test" />
-      <option name="MAIN_CLASS_NAME" value="com.suhorukov.klyuchevsky.test.CalculatorTest" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
@@ -396,6 +388,23 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
+    <configuration default="false" name="HTTPServer" type="Application" factoryName="Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="com.suhorukov.klyuchevsky.HTTPServer" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Less5" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
@@ -408,19 +417,6 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -449,6 +445,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -490,17 +499,17 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.HTMLFileGenerator" />
       <item index="1" class="java.lang.String" itemvalue="Application.WordsFrequency" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.CalculatorTest" />
-      <item index="3" class="java.lang.String" itemvalue="Application.ExceptionImplementation" />
-      <item index="4" class="java.lang.String" itemvalue="Application.ExceptionDemonstration" />
+      <item index="2" class="java.lang.String" itemvalue="Application.ExceptionImplementation" />
+      <item index="3" class="java.lang.String" itemvalue="Application.ExceptionDemonstration" />
+      <item index="4" class="java.lang.String" itemvalue="Application.HTTPServer" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.ExceptionDemonstration" />
-        <item index="1" class="java.lang.String" itemvalue="Application.ExceptionImplementation" />
-        <item index="2" class="java.lang.String" itemvalue="Application.WordsFrequency" />
-        <item index="3" class="java.lang.String" itemvalue="Application.HTMLFileGenerator" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.CalculatorTest" />
+        <item index="0" class="java.lang.String" itemvalue="Application.HTMLFileGenerator" />
+        <item index="1" class="java.lang.String" itemvalue="Application.HTTPServer" />
+        <item index="2" class="java.lang.String" itemvalue="Application.ExceptionDemonstration" />
+        <item index="3" class="java.lang.String" itemvalue="Application.ExceptionImplementation" />
+        <item index="4" class="java.lang.String" itemvalue="Application.WordsFrequency" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -628,7 +637,11 @@
       <created>1368298600109</created>
       <updated>1368298600109</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Modify Less5. Add exceptions task.">
+      <created>1368431030236</created>
+      <updated>1368431030236</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -652,7 +665,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1885" height="1176" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32781065" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -668,7 +681,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.224904" sideWeight="0.66241413" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21878335" sideWeight="0.66241413" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31501472" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -726,7 +739,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modify Less5. Add exceptions task." />
+    <option name="LAST_COMMIT_MESSAGE" value="Modify Less5. Add HTTP-server." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -762,6 +775,7 @@
     <MESSAGE value="Modify Less4. Work with annotations.&#10;Working copy." />
     <MESSAGE value="Modify Less5. Generate HTML file" />
     <MESSAGE value="Modify Less5. Add exceptions task." />
+    <MESSAGE value="Modify Less5. Add HTTP-server." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -803,62 +817,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Less4/src/com/suhorukov/klyuchevsky/commands/Define.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="52" selection-start="302" selection-end="302" vertical-scroll-proportion="0.21636364">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_17/src.zip!/java/lang/reflect/AccessibleObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="125" column="16" selection-start="4554" selection-end="4554" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_17/src.zip!/java/lang/reflect/Field.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="676" column="16" selection-start="27651" selection-end="27651" vertical-scroll-proportion="0.8890909" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Less4/src/com/suhorukov/klyuchevsky/Arg.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="12" selection-start="48" selection-end="48" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Less4/src/com/suhorukov/klyuchevsky/commands/Push.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="19" selection-start="297" selection-end="297" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Less4/src/com/suhorukov/klyuchevsky/Factory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="8" selection-start="733" selection-end="733" vertical-scroll-proportion="0.49454546">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Less4/src/com/suhorukov/klyuchevsky/CalculatorFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="41" selection-start="933" selection-end="933" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_17/src.zip!/java/io/File.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="808" column="31" selection-start="33844" selection-end="33844" vertical-scroll-proportion="0.32963988">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.7.0_17/src.zip!/java/io/FileSystem.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="109" column="28" selection-start="2648" selection-end="2648" vertical-scroll-proportion="0.020706456" />
@@ -871,16 +829,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Less4/src/com/suhorukov/klyuchevsky/In.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="18" selection-start="281" selection-end="281" vertical-scroll-proportion="0.12423874">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/exceptions/ExceptionGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="36" selection-start="286" selection-end="286" vertical-scroll-proportion="0.27827382">
-          <folding />
-        </state>
+        <state line="9" column="18" selection-start="281" selection-end="281" vertical-scroll-proportion="0.12423874" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/exceptions/ExceptionDemonstration.java">
@@ -897,17 +846,87 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/HTMLFileGenerator.java">
+    <entry file="file://$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/exceptions/ExceptionImplementation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="43" selection-start="1004" selection-end="1004" vertical-scroll-proportion="0.0">
+        <state line="39" column="16" selection-start="1009" selection-end="1009" vertical-scroll-proportion="0.84821427">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/exceptions/ExceptionImplementation.java">
+    <entry file="file://$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/exceptions/ExceptionGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="32" selection-start="327" selection-end="327" vertical-scroll-proportion="0.31432974">
+        <state line="11" column="36" selection-start="286" selection-end="286" vertical-scroll-proportion="0.27827382">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_17/src.zip!/java/net/ServerSocket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="483" column="24" selection-start="18462" selection-end="18468" vertical-scroll-proportion="0.10565476">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_17/src.zip!/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="667" column="29" selection-start="25073" selection-end="25077" vertical-scroll-proportion="0.35863096">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_17/src.zip!/java/lang/Runnable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="10" selection-start="1566" selection-end="1566" vertical-scroll-proportion="0.4940476">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_17/src.zip!/java/net/Socket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="887" column="51" selection-start="34578" selection-end="34670" vertical-scroll-proportion="0.13095239">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_17/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="954" column="18" selection-start="36771" selection-end="36771" vertical-scroll-proportion="0.5610119">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_17/src.zip!/java/io/OutputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="127" column="25" selection-start="4500" selection-end="4506" vertical-scroll-proportion="0.46875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/SocketProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="46" selection-start="1296" selection-end="1296" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/HTMLFileGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="19" selection-start="206" selection-end="206" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#829#1352#0" expanded="true" />
+            <element signature="e#1337#1338#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/HTTPServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="10" selection-start="239" selection-end="239" vertical-scroll-proportion="0.20955315">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

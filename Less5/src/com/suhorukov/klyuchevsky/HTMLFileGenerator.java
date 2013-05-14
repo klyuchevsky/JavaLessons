@@ -6,7 +6,7 @@ import java.util.Comparator;
 
 public class HTMLFileGenerator {
     public static void main(String[] args) {
-        File folder = null;
+        File folder;
         if (args.length < 1) {
             System.out.println("Не указана директория");
             return;
@@ -29,22 +29,24 @@ public class HTMLFileGenerator {
 
         File[] files = folder.listFiles();
 
-        Arrays.sort(files, new Comparator<File>() {
-            public int compare(File f1, File f2) {
-                if (!f1.isDirectory() && !f2.isDirectory()) {
-                    return f1.compareTo(f2);
+        if (files != null) {
+            Arrays.sort(files, new Comparator<File>() {
+                public int compare(File f1, File f2) {
+                    if (!f1.isDirectory() && !f2.isDirectory()) {
+                        return f1.compareTo(f2);
+                    }
+
+                    if (f1.isDirectory() && f2.isDirectory()) {
+                        return f1.compareTo(f2);
+                    }
+
+                    if (f1.isDirectory() && !f2.isDirectory()) {
+                        return -1;
+                    } else return 1;
+
                 }
-
-                if (f1.isDirectory() && f2.isDirectory()) {
-                    return f1.compareTo(f2);
-                }
-
-                if (f1.isDirectory() && !f2.isDirectory()) {
-                    return -1;
-                } else return 1;
-
-            }
-        });
+            });
+        }
 
         try (Writer out = new OutputStreamWriter(new FileOutputStream("index.html"))) {
             out.write("<!DOCTYPE html>\n");
@@ -57,22 +59,21 @@ public class HTMLFileGenerator {
             out.write("<table cellpadding=\"1\"> \n");
             out.write("<tr><td><h3>Имя</h3></td><td><h3>Размер</h3></td><td><h3>Последнее изменение</h3></td></tr>\n");
             out.write("<tr><td>" + "<a href=" + '"' + folder.getParent() + '"' + ">...</a></td><td></td><td></td></tr>\n");
-            for (File file : files) {
-                out.write("<tr><td><a href=" + '"' + file.getName() + '"' + ">" + file.getName() + "</a></td>");
-                out.write("<td>");
-                if (file.isFile()) {
-                    out.write(file.length() + " Byte");
+            if (files != null) {
+                for (File file : files) {
+                    out.write("<tr><td><a href=" + '"' + file.getName() + '"' + ">" + file.getName() + "</a></td>");
+                    out.write("<td>");
+                    if (file.isFile()) {
+                        out.write(file.length() + " Byte");
+                    }
+                    out.write("</td>");
+                    out.write("<td>" + new java.text.SimpleDateFormat("dd.MM.yyyy HH:mm:ss").format(file.lastModified()) + "</td></tr>\n");
                 }
-                out.write("</td>");
-                out.write("<td>" + new java.text.SimpleDateFormat("dd.MM.yyyy HH:mm:ss").format(file.lastModified()) + "</td></tr>\n");
             }
             out.write("</table>\n");
             out.write("</body>");
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-
     }
-
 }
