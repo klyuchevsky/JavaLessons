@@ -9,18 +9,19 @@ import java.util.Properties;
 import java.util.Stack;
 
 public class Factory {
-
+    private static final Factory factory = new Factory();                  // class Factory is singleton
     Stack<Double> stack = new Stack<>();             // stack to store values
     Map<String, Double> variables = new HashMap<>(); // hashmap to store variables
     Map<String, Command> commands = new HashMap<>(); // hashmap to store commands
 
-    public Factory()
-            throws IOException {
+    private Factory() {
         Properties prop = new Properties();
 
         // Reading properties from file
         try (FileInputStream in = new FileInputStream("commands.properties")) {
             prop.load(in);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
         }
 
         for (Map.Entry<Object, Object> entry : prop.entrySet()) {
@@ -61,6 +62,10 @@ public class Factory {
                 e.printStackTrace();
             }
         }
+    }
+
+    public static Factory createFactory() {
+        return factory;
     }
 
     public Command getCommandByName(String cmdName) {

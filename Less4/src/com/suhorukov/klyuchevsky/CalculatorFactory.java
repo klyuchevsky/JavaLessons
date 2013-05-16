@@ -4,19 +4,13 @@ import java.io.*;
 import java.util.*;
 
 public class CalculatorFactory {
-    private Factory factory; // factory of calculator commands
-
-    CalculatorFactory()
-            throws IOException {
-        factory = new Factory();
-    }
 
     public static void main(String[] args)
             throws IOException {
         String string; // string to store current command
-        CalculatorFactory calc = new CalculatorFactory();
+        Factory factory = Factory.createFactory(); // create factory of calculator commands
 
-        System.out.println(calc.factory.commands.keySet());
+        System.out.println(factory.commands.keySet());
         Scanner sc = new Scanner(System.in);
 
         if (args.length != 0) {
@@ -46,15 +40,15 @@ public class CalculatorFactory {
 
             String[] words = string.split(" ");
             String cmdName = words[0];
-            Command command = calc.factory.getCommandByName(cmdName);
+            Command command = factory.getCommandByName(cmdName);
             if (cmdName != null) {
                 command.execute(string);
             } else {
                 System.out.println("Неизвестная команда: " + cmdName);
             }
 
-            System.out.println(calc.factory.stack.toString());
-            System.out.println(calc.factory.variables);
+            System.out.println(factory.stack.toString());
+            System.out.println(factory.variables);
         }
     }
 }
