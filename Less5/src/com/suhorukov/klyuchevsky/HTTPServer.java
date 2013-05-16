@@ -5,7 +5,8 @@ import java.net.Socket;
 
 public class HTTPServer {
     public static void main(String[] args) throws Throwable {
-        ServerSocket ss = new ServerSocket(8080);
+        int port = Integer.parseInt(args[0]);
+        ServerSocket ss = new ServerSocket(port);
         while (true) {
             Socket s = ss.accept();
             System.err.println("Client accepted");

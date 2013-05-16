@@ -60,12 +60,20 @@ public class Calculator {
             if (commands.containsKey(cmdName)) {
 
                 Command x = commands.get(cmdName);
+                int x = x.getNumParams();
+                if (string.split(" ").length != x) {
+                    ///weeewew!!!!!
+                }
                 x.execute(stack, string, variables);
 
             } else System.out.println("Неизвестная команда: " + cmdName);
 
             System.out.println(stack.toString());
             System.out.println(variables);
+        }
+
+        finally{
+            sc.close();
         }
     }
 }

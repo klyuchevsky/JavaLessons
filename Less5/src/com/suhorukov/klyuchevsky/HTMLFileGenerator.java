@@ -5,8 +5,10 @@ import java.util.Arrays;
 import java.util.Comparator;
 
 public class HTMLFileGenerator {
+    private File folder = null;
+
     public static void main(String[] args) {
-        File folder;
+
         if (args.length < 1) {
             System.out.println("Не указана директория");
             return;
@@ -14,14 +16,20 @@ public class HTMLFileGenerator {
 
         System.out.println(args[0]);
 
-        folder = new File(args[0]);
+        HTMLFileGenerator htmlGen = new HTMLFileGenerator();
+        //htmlGen.folder = args[0];
+
+    }
+
+    public void generateHTML() {
+//        folder = new File(args[0]);
         if (folder.exists()) {
             if (folder.isFile()) {
                 folder = new File(folder.getParent());
             }
         } else {
             System.out.println("Неверно указана директория:");
-            System.out.println(args[0]);
+            //System.out.println(args[0]);
             return;
         }
 
@@ -75,5 +83,7 @@ public class HTMLFileGenerator {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
+
     }
 }

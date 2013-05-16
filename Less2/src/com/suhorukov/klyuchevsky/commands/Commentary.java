@@ -9,4 +9,9 @@ public class Commentary implements Command {
     public void execute(Stack<Double> stack, String string, Map<String, Double> variables) {
         System.out.println(string);
     }
+
+    @Override
+    public int getNumParams() {
+        return 1;
+    }
 }
