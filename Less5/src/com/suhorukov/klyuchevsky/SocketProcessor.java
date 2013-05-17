@@ -21,7 +21,7 @@ public class SocketProcessor implements Runnable {
     public void run() {
         try {
             readInputHeaders();
-            writeResponse("<!DOCTYPE html><head><meta charset=\"utf-8\"></head><html><body><h1>Test HTTP server</h1></body></html>");
+            writeResponse("<!DOCTYPE html><head><meta charset=\"utf-8\"></head><html><body><h1>Аллегрова - блядь</h1></body></html>");
         } catch (Throwable t) {
             t.printStackTrace();
         } finally {
