@@ -29,51 +29,53 @@ public class Calculator {
         System.out.println(commands.keySet());
         Scanner sc = new Scanner(System.in);
 
-        if (args.length != 0) {
-            File file = new File(args[0]);
-            try {
+        try {
+            if (args.length != 0) {
+                File file = new File(args[0]);
                 sc = new Scanner(file);
-            } catch (FileNotFoundException e) {
-                System.out.println("Не удается найти файл");
-            }
-        }
 
-        while (true) {
-            if (sc.hasNextLine()) {
-                string = sc.nextLine();
-            } else {
-                sc = new Scanner(System.in);
-                continue;
-            }
+                while (true) {
+                    if (sc.hasNextLine()) {
+                        string = sc.nextLine();
+                    } else {
+                        sc = new Scanner(System.in);
+                        continue;
+                    }
 
-            string = string.replaceAll("\\s+", " ");
-            string = string.trim();
+                    string = string.replaceAll("\\s+", " ");
+                    string = string.trim();
 
-            if ("quit".equals(string)) {
-                System.out.println("Выход из приложения");
-                break;
-            }
+                    if ("quit".equals(string)) {
+                        System.out.println("Выход из приложения");
+                        break;
+                    }
 
-            String[] words = string.split(" ");
-            String cmdName = words[0];
+                    String[] words = string.split(" ");
+                    String cmdName = words[0];
 
-            if (commands.containsKey(cmdName)) {
+                    if (commands.containsKey(cmdName)) {
+                        Command x = commands.get(cmdName);
+                        int enoughParams = x.getEnoughParams();
+                        if (stack.size() >= enoughParams) {
+                            x.execute(stack, string, variables);
+                        } else {
+                            System.out.println("Недостаточно операндов в стеке.");
+                            System.out.println("Требуется: >=" + enoughParams);
+                            System.out.println("Стек содержит: " + stack.size());
+                        }
+                    } else System.out.println("Неизвестная команда: " + cmdName);
 
-                Command x = commands.get(cmdName);
-                int x = x.getNumParams();
-                if (string.split(" ").length != x) {
-                    ///weeewew!!!!!
+                    System.out.println(stack.toString());
+                    System.out.println(variables);
                 }
-                x.execute(stack, string, variables);
-
-            } else System.out.println("Неизвестная команда: " + cmdName);
-
-            System.out.println(stack.toString());
-            System.out.println(variables);
-        }
-
-        finally{
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } finally {
             sc.close();
         }
     }
 }
+
+
+

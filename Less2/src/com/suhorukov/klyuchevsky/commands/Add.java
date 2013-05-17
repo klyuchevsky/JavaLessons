@@ -11,26 +11,12 @@ public class Add implements Command {
         double b;
         System.out.println("+");
 
-        if (stack.empty()) {
-            System.out.println("Стек пуст, невозможно выполнить операцию");
-            return;
-        }
-
-        if (stack.size() == 1) {
-            System.out.println("Стек содержит только один параметр");
-            return;
-        }
-
-        if (stack.size() >= 2) {
-            a = stack.pop();
-            b = stack.pop();
-            stack.push(a + b);
-        }
+        a = stack.pop();
+        b = stack.pop();
+        stack.push(a + b);
     }
 
-    @Override
-    public int getNumParams() {
-        return 1;
+    public int getEnoughParams() {
+        return 2;
     }
-
 }

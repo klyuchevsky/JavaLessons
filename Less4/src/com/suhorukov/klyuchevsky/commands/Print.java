@@ -14,4 +14,8 @@ public class Print implements Command {
         System.out.println("print");
         System.out.println(stack.peek());
     }
+
+    public int getEnoughParams() {
+        return 1;
+    }
 }

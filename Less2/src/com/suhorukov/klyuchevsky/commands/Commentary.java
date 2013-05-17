@@ -10,8 +10,7 @@ public class Commentary implements Command {
         System.out.println(string);
     }
 
-    @Override
-    public int getNumParams() {
-        return 1;
+    public int getEnoughParams() {
+        return 0;
     }
 }

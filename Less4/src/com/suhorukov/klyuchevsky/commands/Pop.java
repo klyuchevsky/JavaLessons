@@ -12,8 +12,10 @@ public class Pop implements Command {
 
     public void execute(String string) {
         System.out.println("pop");
-        if (!stack.empty()) {
-            stack.pop();
-        } else System.out.println("Стек пуст, невозможно извлечь элемент");
+        stack.pop();
+    }
+
+    public int getEnoughParams() {
+        return 1;
     }
 }

@@ -12,14 +12,13 @@ public class Exp implements Command {
 
     public void execute(String string) {
         double a;
-        int empty = 0;
         System.out.println("exp");
-        if (stack.size() == empty) {
-            System.out.println("Стек пуст, невозможно выполнить операцию");
-            return;
-        }
         a = stack.pop();
         stack.push(StrictMath.exp(a));
+    }
+
+    public int getEnoughParams() {
+        return 1;
     }
 }
 
