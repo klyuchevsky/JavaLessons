@@ -4,7 +4,11 @@ import java.io.*;
 import java.util.*;
 
 public class WordsFrequency {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws Exception {
+        if (args.length == 0) {
+            System.out.println("Введите имя файла для подсчета частоты слов");
+            return;
+        }
         try (Reader r = new InputStreamReader(new BufferedInputStream(new FileInputStream(args[0])))) {
             final HashMap<String, Integer> frequency = new HashMap<>();
             StringBuilder sb = new StringBuilder();
