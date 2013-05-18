@@ -9,7 +9,8 @@ import java.util.Scanner;
 import java.util.Stack;
 
 public class Calculator {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args)
+            throws Exception {
         Stack<Double> stack = new Stack<>(); // stack to store values
         Map<String, Command> commands = new HashMap<>(); // hashmap to store commands
         String string; // string to store current command
