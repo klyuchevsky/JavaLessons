@@ -11,7 +11,7 @@ public class Pop implements Command {
         stack.pop();
     }
 
-    public int getEnoughParams() {
+    public int getEnoughStackDepth() {
         return 1;
     }
 }

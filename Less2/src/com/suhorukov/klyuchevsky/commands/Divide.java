@@ -15,7 +15,7 @@ public class Divide implements Command {
         stack.push(a / b);
     }
 
-    public int getEnoughParams() {
+    public int getEnoughStackDepth() {
         return 2;
     }
 }

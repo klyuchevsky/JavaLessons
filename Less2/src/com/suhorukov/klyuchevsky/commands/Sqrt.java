@@ -18,7 +18,7 @@ public class Sqrt implements Command {
         stack.push(StrictMath.sqrt(a));
     }
 
-    public int getEnoughParams() {
+    public int getEnoughStackDepth() {
         return 1;
     }
 }

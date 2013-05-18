@@ -10,7 +10,7 @@ public class Commentary implements Command {
         System.out.println(string);
     }
 
-    public int getEnoughParams() {
+    public int getEnoughStackDepth() {
         return 0;
     }
 }

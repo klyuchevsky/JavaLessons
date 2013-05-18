@@ -36,7 +36,6 @@ public class Factory {
                 Field[] fields = classFile.getDeclaredFields();
                 if (fields != null) {
                     for (Field field : fields) {
-
                         if (field.isAnnotationPresent(In.class)) {
                             In annotation = field.getAnnotation(In.class);
                             Arg argType = annotation.getArg();

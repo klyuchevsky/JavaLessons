@@ -31,7 +31,7 @@ public class Push implements Command {
             }
     }
 
-    public int getEnoughParams() {
+    public int getEnoughStackDepth() {
         return 0;
     }
 }

@@ -8,5 +8,5 @@ public interface Command {
     void execute(Stack<Double> stack, String string, Map<String, Double> variables);
 
     //get enough params in stack to perform command
-    int getEnoughParams();
+    int getEnoughStackDepth();
 }

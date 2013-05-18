@@ -9,7 +9,7 @@ import java.util.Scanner;
 import java.util.Stack;
 
 public class Calculator {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         Stack<Double> stack = new Stack<>(); // stack to store values
         Map<String, Command> commands = new HashMap<>(); // hashmap to store commands
         String string; // string to store current command
@@ -27,52 +27,55 @@ public class Calculator {
         commands.put("define", new Define());
 
         System.out.println(commands.keySet());
-        Scanner sc = new Scanner(System.in);
+        Scanner sc = null;
 
         try {
             if (args.length != 0) {
                 File file = new File(args[0]);
                 sc = new Scanner(file);
-
-                while (true) {
-                    if (sc.hasNextLine()) {
-                        string = sc.nextLine();
-                    } else {
-                        sc = new Scanner(System.in);
-                        continue;
-                    }
-
-                    string = string.replaceAll("\\s+", " ");
-                    string = string.trim();
-
-                    if ("quit".equals(string)) {
-                        System.out.println("Выход из приложения");
-                        break;
-                    }
-
-                    String[] words = string.split(" ");
-                    String cmdName = words[0];
-
-                    if (commands.containsKey(cmdName)) {
-                        Command x = commands.get(cmdName);
-                        int enoughParams = x.getEnoughParams();
-                        if (stack.size() >= enoughParams) {
-                            x.execute(stack, string, variables);
-                        } else {
-                            System.out.println("Недостаточно операндов в стеке.");
-                            System.out.println("Требуется: >=" + enoughParams);
-                            System.out.println("Стек содержит: " + stack.size());
-                        }
-                    } else System.out.println("Неизвестная команда: " + cmdName);
-
-                    System.out.println(stack.toString());
-                    System.out.println(variables);
-                }
+            } else {
+                sc = new Scanner(System.in);
             }
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
+
+            while (true) {
+                if (sc.hasNextLine()) {
+                    string = sc.nextLine();
+                } else {
+                    sc = new Scanner(System.in);
+                    continue;
+                }
+
+                string = string.replaceAll("\\s+", " ");
+                string = string.trim();
+
+                if ("quit".equals(string)) {
+                    System.out.println("Выход из приложения");
+                    break;
+                }
+
+                String[] words = string.split(" ");
+                String cmdName = words[0];
+
+                if (commands.containsKey(cmdName)) {
+                    Command x = commands.get(cmdName);
+                    int enoughParams = x.getEnoughStackDepth();
+                    if (stack.size() >= enoughParams) {
+                        x.execute(stack, string, variables);
+                    } else {
+                        System.out.println("Недостаточно операндов в стеке.");
+                        System.out.println("Требуется: >=" + enoughParams);
+                        System.out.println("Стек содержит: " + stack.size());
+                    }
+                } else System.out.println("Неизвестная команда: " + cmdName);
+
+                System.out.println(stack.toString());
+                System.out.println(variables);
+            }
+
         } finally {
-            sc.close();
+            if (sc != null) {
+                sc.close();
+            }
         }
     }
 }

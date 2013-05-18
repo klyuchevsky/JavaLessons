@@ -57,7 +57,9 @@ public class CalculatorFactory {
             System.out.println("Не удается найти файл");
 
         } finally {
-            sc.close();
+            if (sc != null) {
+                sc.close();
+            }
         }
     }
 }
