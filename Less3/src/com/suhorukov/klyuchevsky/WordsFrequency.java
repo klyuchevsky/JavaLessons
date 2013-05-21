@@ -9,7 +9,7 @@ public class WordsFrequency {
             System.out.println("Введите имя файла для подсчета частоты слов");
             return;
         }
-        try (Reader r = new InputStreamReader(new BufferedInputStream(new FileInputStream(args[0])))) {
+        try (Reader r = new InputStreamReader(new BufferedInputStream(new FileInputStream(args[0])), "cp1251")) {
             final HashMap<String, Integer> frequency = new HashMap<>();
             StringBuilder sb = new StringBuilder();
             int wordCount = 0; // Count of all words
@@ -51,7 +51,7 @@ public class WordsFrequency {
                 wordCount += z;
             }
 
-            try (Writer out = new OutputStreamWriter(new FileOutputStream("output.csv"))) {
+            try (Writer out = new OutputStreamWriter(new FileOutputStream("output.csv"), "cp1251")) {
                 for (String str : list) {
                     out.write(str + ";" + frequency.get(str) + ";" + (double) frequency.get(str) / wordCount * 100 + "%;\n");
                 }
