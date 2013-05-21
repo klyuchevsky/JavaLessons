@@ -21,7 +21,7 @@ public class SocketProcessor implements Runnable {
     public void run() {
         try {
             readInputHeaders();
-            writeResponse("<!DOCTYPE html><head><meta charset=\"utf-8\"></head><html><body><h1>Аллегрова - блядь</h1></body></html>");
+            writeResponse("<!DOCTYPE html><head><meta charset=\"utf-8\"></head><html><body><h1>Тестируем сервер</h1></body></html>");
         } catch (Throwable t) {
             t.printStackTrace();
         } finally {
@@ -47,6 +47,7 @@ public class SocketProcessor implements Runnable {
 
     private void readInputHeaders() throws Throwable {
         BufferedReader br = new BufferedReader(new InputStreamReader(is));
+        System.out.println(is.toString());
         while (true) {
             String s = br.readLine();
             if (s == null || s.trim().length() == 0) {

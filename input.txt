@@ -2,3 +2,6 @@ It's file to test program for count words in specified file.
 test streambuffer....
 test 2 ....
 test 3... new program
+Тестируем тест тест
+тест 3
+тестируем

@@ -11,6 +11,8 @@ public class HTTPServer {
             Socket s = ss.accept();
             System.err.println("Client accepted");
             new Thread(new SocketProcessor(s)).start();
+
+
         }
     }
 }
