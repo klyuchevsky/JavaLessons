@@ -1,9 +1,6 @@
 package com.suhorukov.klyuchevsky;
 
-import java.io.BufferedReader;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.OutputStream;
+import java.io.*;
 import java.net.Socket;
 
 public class SocketProcessor implements Runnable {
@@ -11,16 +8,46 @@ public class SocketProcessor implements Runnable {
     private Socket s;
     private InputStream is;
     private OutputStream os;
+    private String path;
+    private File serverPath;
+    private Boolean isDirectory;
 
-    public SocketProcessor(Socket s) throws Throwable {
+    public SocketProcessor(Socket s, File serverPath) throws Throwable {
         this.s = s;
         this.is = s.getInputStream();
         this.os = s.getOutputStream();
+        this.serverPath = serverPath;
     }
 
     public void run() {
         try {
+            char separator = File.separator.toCharArray()[File.separator.length() - 1]; // separator in operation system
             readInputHeaders();
+            if (separator == (path.charAt(path.length() - 1))) {
+                isDirectory = true;
+            } else {
+                isDirectory = false;
+            }
+
+            path = path.replaceAll("/+", " ");
+            path = path.trim();
+            String[] dirs = path.split(" ");
+            path = serverPath.getPath();
+            path = path + separator;
+
+            for (String dir : dirs) {
+                if (separator != (path.charAt(path.length() - 1))) {
+                    path = path + separator;
+                }
+                path = path + dir;
+            }
+
+//            System.out.println(isDirectory);
+            if (isDirectory) {
+                path = path + separator;
+            }
+            System.out.println(path);
+
             writeResponse("<!DOCTYPE html><head><meta charset=\"utf-8\"></head><html><body><h1>Тестируем сервер</h1></body></html>");
         } catch (Throwable t) {
             t.printStackTrace();
@@ -47,10 +74,14 @@ public class SocketProcessor implements Runnable {
 
     private void readInputHeaders() throws Throwable {
         BufferedReader br = new BufferedReader(new InputStreamReader(is));
-        System.out.println(is.toString());
+
         while (true) {
             String s = br.readLine();
-            if (s == null || s.trim().length() == 0) {
+            if (s.contains("GET")) {
+                path = s.substring(4, s.length() - 8); // get resource name from get command of client
+            }
+            System.out.println(s);
+            if (s.trim().length() == 0) {
                 break;
             }
         }

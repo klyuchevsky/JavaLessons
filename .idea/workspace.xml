@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="56840984-e276-4d06-8d57-d9290c1b3ec0" name="Default" comment="Modify Less 5.&#10;Reformat.">
+    <list default="true" id="56840984-e276-4d06-8d57-d9290c1b3ec0" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/HTMLFileGenerator.java" afterPath="$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/HTMLFileGenerator.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/HTTPServer.java" afterPath="$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/HTTPServer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/SocketProcessor.java" afterPath="$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/SocketProcessor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/ant.xml" afterPath="$PROJECT_DIR$/.idea/ant.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/input.txt" afterPath="$PROJECT_DIR$/input.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output.csv" afterPath="$PROJECT_DIR$/output.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="JavaLessons.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/WordsFrequency.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1369153911093" ignored="false" />
-    <file path="/fragment.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1369156535734" ignored="false" />
-    <file path="/Dummy.txt" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1369158836187" ignored="false" />
+    <file path="/fragment.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1369203442968" ignored="false" />
+    <file path="/Dummy.txt" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1369158851765" ignored="false" />
     <file path="/Exc2.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1366532662430" ignored="false" />
     <file path="/Push.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1368781020299" ignored="false" />
     <file path="/Calculator.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1368875291593" ignored="false" />
@@ -35,13 +33,13 @@
     <file path="/Factory.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1368709650953" ignored="false" />
     <file path="/In.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1368194401828" ignored="false" />
     <file path="/Arg.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1368194327968" ignored="false" />
-    <file path="/HTMLFileGenerator.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1368873915468" ignored="false" />
+    <file path="/HTMLFileGenerator.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1369191776218" ignored="false" />
     <file path="/ExceptionGenerator.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1368339329187" ignored="false" />
     <file path="/ExceptionImplementation.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1368444683474" ignored="false" />
     <file path="/ExceptionDemonstration.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1368430202628" ignored="false" />
     <file path="/MyException.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1368430070668" ignored="false" />
-    <file path="/HTTPServer.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1369158177109" ignored="false" />
-    <file path="/SocketProcessor.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1369158808015" ignored="false" />
+    <file path="/HTTPServer.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1369202101375" ignored="false" />
+    <file path="/SocketProcessor.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1369206693125" ignored="false" />
     <file path="/Commentary.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1368780980457" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -106,7 +104,7 @@
       <file leaf-file-name="HTMLFileGenerator.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/HTMLFileGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="36" selection-start="483" selection-end="483" vertical-scroll-proportion="0.0">
+            <state line="16" column="8" selection-start="413" selection-end="445" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -115,7 +113,7 @@
       <file leaf-file-name="HTTPServer.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/HTTPServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="50" selection-start="384" selection-end="384" vertical-scroll-proportion="0.0">
+            <state line="9" column="36" selection-start="282" selection-end="282" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -124,8 +122,10 @@
       <file leaf-file-name="SocketProcessor.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/SocketProcessor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="11" selection-start="1400" selection-end="1400" vertical-scroll-proportion="0.95238096">
-              <folding />
+            <state line="44" column="47" selection-start="1340" selection-end="1340" vertical-scroll-proportion="0.58301884">
+              <folding>
+                <marker date="1369206753640" expanded="true" signature="872:1463" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -341,7 +341,7 @@
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="com.suhorukov.klyuchevsky.HTTPServer" />
       <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="8080 &quot;C:\Documents and Settings\Обучение\IdeaProjects\JavaLessons&quot;" />
+      <option name="PROGRAM_PARAMETERS" value="8080 &quot;C:\Documents and Settings\Svetlana.SVETKA\IdeaProjects\JavaLessons&quot;" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" value="" />
@@ -684,7 +684,11 @@
       <created>1369154584734</created>
       <updated>1369154584734</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Modify Less 5.&#10;Reformat.">
+      <created>1369158859984</created>
+      <updated>1369158859984</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -719,13 +723,13 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32662722" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3325444" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32715008" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3325444" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32662722" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32930514" sideWeight="0.67142856" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21799028" sideWeight="0.6674556" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32662722" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21799028" sideWeight="0.6733728" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32662722" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -862,21 +866,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/test/CalculatorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="30" selection-start="2223" selection-end="2223" vertical-scroll-proportion="1.554878" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Less4/src/com/suhorukov/klyuchevsky/commands/Define.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="76" selection-start="790" selection-end="790" vertical-scroll-proportion="0.547546" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Command.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="17" selection-start="100" selection-end="100" vertical-scroll-proportion="0.18085106" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Less4/src/com/suhorukov/klyuchevsky/Factory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="69" column="50" selection-start="2760" selection-end="2760" vertical-scroll-proportion="0.0" />
@@ -907,11 +896,6 @@
         <state line="18" column="18" selection-start="588" selection-end="588" vertical-scroll-proportion="0.6472081" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Calculator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="10" selection-start="1113" selection-end="1113" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Less4/src/com/suhorukov/klyuchevsky/CalculatorFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="39" column="20" selection-start="1194" selection-end="1194" vertical-scroll-proportion="0.0" />
@@ -931,24 +915,54 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_17/src.zip!/java/lang/Throwable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="113" column="13" selection-start="5037" selection-end="5037" vertical-scroll-proportion="2.786372">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/Calculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="16" selection-start="1571" selection-end="1611" vertical-scroll-proportion="0.626151">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/HTMLFileGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="36" selection-start="483" selection-end="483" vertical-scroll-proportion="0.0">
+        <state line="16" column="8" selection-start="413" selection-end="445" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_17/src.zip!/java/io/File.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="195" column="31" selection-start="8102" selection-end="8102" vertical-scroll-proportion="0.33207548">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_17/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2750" column="18" selection-start="109635" selection-end="109635" vertical-scroll-proportion="0.33207548">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/HTTPServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="50" selection-start="384" selection-end="384" vertical-scroll-proportion="0.0">
+        <state line="9" column="36" selection-start="282" selection-end="282" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/SocketProcessor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="11" selection-start="1400" selection-end="1400" vertical-scroll-proportion="0.95238096">
-          <folding />
+        <state line="44" column="47" selection-start="1340" selection-end="1340" vertical-scroll-proportion="0.58301884">
+          <folding>
+            <marker date="1369206753640" expanded="true" signature="872:1463" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

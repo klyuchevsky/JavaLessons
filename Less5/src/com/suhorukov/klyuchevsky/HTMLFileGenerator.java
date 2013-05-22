@@ -15,7 +15,6 @@ public class HTMLFileGenerator {
         System.out.println(args[0]);
         HTMLFileGenerator htmlGen = new HTMLFileGenerator();
         File folder = new File(args[0]);
-
         try (Writer out = new OutputStreamWriter(new FileOutputStream("index.html"))) {
             htmlGen.generateHTML(folder, out);
         } catch (IOException e) {
