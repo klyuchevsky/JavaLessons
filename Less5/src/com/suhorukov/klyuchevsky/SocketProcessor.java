@@ -23,17 +23,20 @@ public class SocketProcessor implements Runnable {
         try {
             char separator = File.separator.toCharArray()[File.separator.length() - 1]; // separator in operation system
             readInputHeaders();
-            if (separator == (path.charAt(path.length() - 1))) {
-                isDirectory = true;
-            } else {
-                isDirectory = false;
-            }
+//            System.out.println(path);
+            System.out.println(path.charAt(path.length() - 1));
+//            if (path.charAt(path.length() - 1) == / )  {
+//                isDirectory = true;
+//            } else {
+//                isDirectory = false;
+//            }
 
             path = path.replaceAll("/+", " ");
             path = path.trim();
             String[] dirs = path.split(" ");
             path = serverPath.getPath();
             path = path + separator;
+
 
             for (String dir : dirs) {
                 if (separator != (path.charAt(path.length() - 1))) {
@@ -42,7 +45,7 @@ public class SocketProcessor implements Runnable {
                 path = path + dir;
             }
 
-//            System.out.println(isDirectory);
+            System.out.println(isDirectory);
             if (isDirectory) {
                 path = path + separator;
             }
@@ -78,7 +81,8 @@ public class SocketProcessor implements Runnable {
         while (true) {
             String s = br.readLine();
             if (s.contains("GET")) {
-                path = s.substring(4, s.length() - 8); // get resource name from get command of client
+                path = s.substring(4, s.length() - 9); // get resource name from get command of client
+//                System.out.println(path);
             }
             System.out.println(s);
             if (s.trim().length() == 0) {
