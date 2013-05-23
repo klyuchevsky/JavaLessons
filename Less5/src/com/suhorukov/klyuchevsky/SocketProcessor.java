@@ -10,7 +10,7 @@ public class SocketProcessor implements Runnable {
     private OutputStream os;
     private String path;
     private File serverPath;
-    private Boolean isDirectory;
+    private String getRequest;
 
     public SocketProcessor(Socket s, File serverPath) throws Throwable {
         this.s = s;
@@ -22,16 +22,11 @@ public class SocketProcessor implements Runnable {
     public void run() {
         try {
             char separator = File.separator.toCharArray()[File.separator.length() - 1]; // separator in operation system
-            readInputHeaders();
-//            System.out.println(path);
-            System.out.println(path.charAt(path.length() - 1));
-//            if (path.charAt(path.length() - 1) == / )  {
-//                isDirectory = true;
-//            } else {
-//                isDirectory = false;
-//            }
+            File output;
 
-            path = path.replaceAll("/+", " ");
+            readInputHeaders();
+
+            path = getRequest.replaceAll("/+", " ");
             path = path.trim();
             String[] dirs = path.split(" ");
             path = serverPath.getPath();
@@ -45,12 +40,27 @@ public class SocketProcessor implements Runnable {
                 path = path + dir;
             }
 
-            System.out.println(isDirectory);
-            if (isDirectory) {
-                path = path + separator;
-            }
             System.out.println(path);
 
+            if (getRequest.charAt(getRequest.length() - 1) == '/') {
+                output = new File(path);
+                if (output.exists()) {
+//                    HTMLFileGenerator htmlGen = new HTMLFileGenerator();
+//                    String response = "HTTP/1.1 200 OK\r\n" +
+//                            "Server: HTTPServer/2013-05-14\r\n" +
+//                            "Content-Type: text/html\r\n" +
+//                            "Content-Length: " + "os.length()" + "\r\n" +
+//                            "Connection: close\r\n\r\n";
+//                    String result = response + s;
+//                    os.write(result.getBytes());
+//                    htmlGen.generateHTML(output, new OutputStreamWriter(os));
+//                    os.flush();
+//
+                    writeResponse("exist");
+                } else {
+
+                }
+            }
             writeResponse("<!DOCTYPE html><head><meta charset=\"utf-8\"></head><html><body><h1>Тестируем сервер</h1></body></html>");
         } catch (Throwable t) {
             t.printStackTrace();
@@ -81,8 +91,7 @@ public class SocketProcessor implements Runnable {
         while (true) {
             String s = br.readLine();
             if (s.contains("GET")) {
-                path = s.substring(4, s.length() - 9); // get resource name from get command of client
-//                System.out.println(path);
+                getRequest = s.substring(4, s.length() - 9); // get resource name from get command of client
             }
             System.out.println(s);
             if (s.trim().length() == 0) {
