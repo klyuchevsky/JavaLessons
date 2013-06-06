@@ -9,7 +9,7 @@ public class CalculatorFactory {
             throws IOException {
         String string; // string to store current command
         Factory factory = Factory.createFactory(); // create factory of calculator commands
-        System.out.println(factory.commands.keySet());
+        System.out.println(factory.getAvailableCommands());
         Scanner sc = null;
 
         try {
@@ -44,20 +44,20 @@ public class CalculatorFactory {
                 } // we must use "/#" command instead "#" in property file, and here we convert command to class name
 
                 Command command = factory.getCommandByName(cmdName);
-                if (factory.commands.containsKey(cmdName)) {
+                if (factory.existCommand(cmdName)) {
                     int enoughParams = command.getEnoughParams();
-                    if (factory.stack.size() >= enoughParams) {
+                    if (factory.getStack().size() >= enoughParams) {
                         command.execute(string);
                     } else {
                         System.out.println("Недостаточно операндов в стеке.");
                         System.out.println("Требуется: >=" + enoughParams);
-                        System.out.println("Стек содержит: " + factory.stack.size());
+                        System.out.println("Стек содержит: " + factory.getStack().size());
                     }
                 } else {
                     System.out.println("Неизвестная команда: " + cmdName);
                 }
-                System.out.println(factory.stack.toString());
-                System.out.println(factory.variables);
+                System.out.println(factory.getStack());
+                System.out.println(factory.getVariables());
             }
 
         } finally {

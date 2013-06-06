@@ -3,16 +3,13 @@ package com.suhorukov.klyuchevsky;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.lang.reflect.Field;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Properties;
-import java.util.Stack;
+import java.util.*;
 
 public class Factory {
     private static final Factory factory = new Factory();                  // class Factory is singleton
-    Stack<Double> stack = new Stack<>();             // stack to store values
-    Map<String, Double> variables = new HashMap<>(); // hashmap to store variables
-    Map<String, Command> commands = new HashMap<>(); // hashmap to store commands
+    private Stack<Double> stack = new Stack<>();             // stack to store values
+    private Map<String, Double> variables = new HashMap<>(); // hashmap to store variables
+    private Map<String, Command> commands = new HashMap<>(); // hashmap to store commands
 
     private Factory() {
         Properties prop = new Properties();
@@ -69,5 +66,21 @@ public class Factory {
 
     public Command getCommandByName(String cmdName) {
         return commands.get(cmdName);
+    }
+
+    public Collection<String> getAvailableCommands() {
+        return Collections.unmodifiableCollection(commands.keySet());
+    }
+
+    public boolean existCommand(String cmdName) {
+        return commands.containsKey(cmdName);
+    }
+
+    public Stack getStack() {
+        return stack;
+    }
+
+    public Map getVariables() {
+        return variables;
     }
 }
