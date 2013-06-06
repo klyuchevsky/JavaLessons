@@ -3,6 +3,7 @@ package com.suhorukov.klyuchevsky;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.lang.reflect.Field;
+import java.lang.reflect.Proxy;
 import java.util.*;
 
 public class Factory {
@@ -10,6 +11,7 @@ public class Factory {
     private Stack<Double> stack = new Stack<>();             // stack to store values
     private Map<String, Double> variables = new HashMap<>(); // hashmap to store variables
     private Map<String, Command> commands = new HashMap<>(); // hashmap to store commands
+    private boolean debug = false;
 
     private Factory() {
         Properties prop = new Properties();
@@ -27,7 +29,13 @@ public class Factory {
             try {
                 Class classFile = Class.forName(name);
                 Command cmd = (Command) classFile.newInstance();
-                commands.put(className, cmd);
+                System.out.println(debug);
+                if (debug) {
+                    Command proxy = (Command) Proxy.newProxyInstance(Command.class.getClassLoader(), new Class[]{Command.class}, new Invoker(cmd, stack, variables));
+                    commands.put(className, proxy);
+                } else {
+                    commands.put(className, cmd);
+                }
 
                 // Check for fields annotation
                 Field[] fields = classFile.getDeclaredFields();
@@ -82,5 +90,9 @@ public class Factory {
 
     public Map getVariables() {
         return variables;
+    }
+
+    public void setDebugMode() {
+        debug = true;
     }
 }

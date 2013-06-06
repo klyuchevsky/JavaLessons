@@ -1,6 +1,7 @@
 package com.suhorukov.klyuchevsky;
 
 import java.io.*;
+import java.lang.reflect.Proxy;
 import java.util.*;
 
 public class CalculatorFactory {
@@ -11,6 +12,11 @@ public class CalculatorFactory {
         Factory factory = Factory.createFactory(); // create factory of calculator commands
         System.out.println(factory.getAvailableCommands());
         Scanner sc = null;
+        for (String arg : args) {
+            if (arg.equals("debug")) {
+                factory.setDebugMode(); // set debug mode
+            }
+        }
 
         try {
             if (args.length != 0) {
@@ -58,6 +64,12 @@ public class CalculatorFactory {
                 }
                 System.out.println(factory.getStack());
                 System.out.println(factory.getVariables());
+
+//                System.out.println("test proxy");
+//                string = "push 4";
+//                Command proxy = (Command)Proxy.newProxyInstance(Command.class.getClassLoader(), new Class[]{Command.class}, new Invoker(factory.getCommandByName("push")));
+//                proxy.execute(string);
+
             }
 
         } finally {
