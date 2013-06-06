@@ -6,20 +6,15 @@ import com.suhorukov.klyuchevsky.In;
 
 import java.util.Stack;
 
-public class Sqrt implements Command {
+public class Exp implements Command {
     @In(getArg = Arg.STACK)
     private Stack<Double> stack;
 
     public void execute(String string) {
         double a;
-        System.out.println("sqrt");
-        if (stack.peek() < 0) {
-            System.out.println("sqrt" + stack.peek());
-            System.out.println("Стек содержит отрицательное число, извлечение корня невозможно");
-            return;
-        }
+        System.out.println("exp");
         a = stack.pop();
-        stack.push(StrictMath.sqrt(a));
+        stack.push(StrictMath.exp(a));
     }
 
     public int getEnoughParams() {
