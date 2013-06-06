@@ -38,8 +38,13 @@ public class CalculatorFactory {
 
                 String[] words = string.split(" ");
                 String cmdName = words[0];
+
+                if ("#".equals(cmdName)) {
+                    cmdName = "/#";
+                } // we must use "/#" command instead "#" in property file, and here we convert command to class name
+
                 Command command = factory.getCommandByName(cmdName);
-                if (cmdName != null) {
+                if (factory.commands.containsKey(cmdName)) {
                     int enoughParams = command.getEnoughParams();
                     if (factory.stack.size() >= enoughParams) {
                         command.execute(string);
