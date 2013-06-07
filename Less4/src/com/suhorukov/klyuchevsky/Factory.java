@@ -7,13 +7,16 @@ import java.lang.reflect.Proxy;
 import java.util.*;
 
 public class Factory {
-    private static final Factory factory = new Factory();                  // class Factory is singleton
+    private static Factory factory = new Factory();    // class Factory is singleton
     private Stack<Double> stack = new Stack<>();             // stack to store values
     private Map<String, Double> variables = new HashMap<>(); // hashmap to store variables
     private Map<String, Command> commands = new HashMap<>(); // hashmap to store commands
-    private boolean debug = false;
 
     private Factory() {
+        create();
+    }
+
+    public void create() {
         Properties prop = new Properties();
 
         // Reading properties from file
@@ -29,8 +32,7 @@ public class Factory {
             try {
                 Class classFile = Class.forName(name);
                 Command cmd = (Command) classFile.newInstance();
-                System.out.println(debug);
-                if (debug) {
+                if (CalcModified.isDebug) {
                     Command proxy = (Command) Proxy.newProxyInstance(Command.class.getClassLoader(), new Class[]{Command.class}, new Invoker(cmd, stack, variables));
                     commands.put(className, proxy);
                 } else {
@@ -90,9 +92,5 @@ public class Factory {
 
     public Map getVariables() {
         return variables;
-    }
-
-    public void setDebugMode() {
-        debug = true;
     }
 }

@@ -7,13 +7,13 @@ import java.util.Stack;
 
 public class Invoker implements InvocationHandler {
     private Command command;
-    private Stack stack;
-    private Map varMap;
+//    private Stack stack;
+//    private Map varMap;
 
     public Invoker(Command command, Stack stack, Map varMap) {
         this.command = command;
-        this.stack = stack;
-        this.varMap = varMap;
+//        this.stack = stack;
+//        this.varMap = varMap;
     }
 
     @Override
@@ -21,8 +21,17 @@ public class Invoker implements InvocationHandler {
 //        logger.debug("Stack before " + stack);
 //        logger.debug("Context " + varMap);
 //        logger.debug("Arguments " + Arrays.toString((String[]) args[0]));
-        command.execute(((String) args[0]));
-        System.out.println("in debug mode");
+
+
+        if (method.getName().equals("getEnoughParams")) {
+            return command.getEnoughParams();
+        }
+
+        if (method.getName().equals("execute")) {
+            command.execute((String) args[0]);
+        }
+
+//        System.out.println("in debug mode");
 //        logger.debug("Stack after " + stack);
 //        logger.debug("-----------------------------------------------------------------");
         return null;
