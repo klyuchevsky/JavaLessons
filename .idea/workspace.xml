@@ -2,14 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56840984-e276-4d06-8d57-d9290c1b3ec0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log4j.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/fileProcessor/FileService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/fileProcessor/FileSystem.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/NotImplementedCommand.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/RequestHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/HTTPServer.java" afterPath="$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/HTTPServer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/RequestParser.java" afterPath="$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/RequestParser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/SocketProcessor.java" afterPath="$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/SocketProcessor.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="JavaLessons.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/WordsFrequency.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1368298383421" ignored="false" />
-    <file path="/fragment.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1370666115187" ignored="false" />
-    <file path="/Dummy.txt" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1370666849296" ignored="false" />
+    <file path="/fragment.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1370683464734" ignored="false" />
+    <file path="/Dummy.txt" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1370685288437" ignored="false" />
     <file path="/Exc2.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1366532662430" ignored="false" />
     <file path="/Push.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1368781020299" ignored="false" />
     <file path="/Calculator.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1368779264673" ignored="false" />
@@ -36,12 +42,13 @@
     <file path="/ExceptionImplementation.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1368444683474" ignored="false" />
     <file path="/ExceptionDemonstration.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1368430202628" ignored="false" />
     <file path="/MyException.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1368430070668" ignored="false" />
-    <file path="/HTTPServer.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1368711752421" ignored="false" />
-    <file path="/SocketProcessor.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1368501720555" ignored="false" />
+    <file path="/HTTPServer.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1370686409609" ignored="false" />
+    <file path="/SocketProcessor.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1370711503078" ignored="false" />
     <file path="/Commentary.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1368780980457" ignored="false" />
     <file path="/Invoker.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1370635611718" ignored="false" />
     <file path="/CalculatorModified.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1370603030942" ignored="false" />
     <file path="/CalcModified.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1370631512640" ignored="false" />
+    <file path="/RequestHandler.java" changelist="56840984-e276-4d06-8d57-d9290c1b3ec0" time="1370686551937" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +63,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -92,7 +100,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -102,28 +109,73 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="CalcModified.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Less4/src/com/suhorukov/klyuchevsky/CalcModified.java">
+      <file leaf-file-name="HTMLFileGenerator.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/HTMLFileGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="0" selection-start="2062" selection-end="2062" vertical-scroll-proportion="0.0">
+            <state line="36" column="17" selection-start="1040" selection-end="1040" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Factory.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Less4/src/com/suhorukov/klyuchevsky/Factory.java">
+      <file leaf-file-name="HTTPServer.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/HTTPServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="143" selection-start="1417" selection-end="1417" vertical-scroll-proportion="0.0">
+            <state line="18" column="0" selection-start="511" selection-end="511" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Invoker.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Less4/src/com/suhorukov/klyuchevsky/Invoker.java">
+      <file leaf-file-name="RequestHandler.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/RequestHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="46" selection-start="532" selection-end="532" vertical-scroll-proportion="0.5635359">
+            <state line="26" column="0" selection-start="655" selection-end="655" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SocketProcessor.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/SocketProcessor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="68" column="40" selection-start="2673" selection-end="2673" vertical-scroll-proportion="0.7328094">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NotImplementedCommand.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/NotImplementedCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="0" selection-start="606" selection-end="606" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FileService.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/fileProcessor/FileService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="0" selection-start="348" selection-end="348" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FileSystem.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/fileProcessor/FileSystem.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="23" selection-start="227" selection-end="227" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RequestParser.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/RequestParser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="17" selection-start="476" selection-end="476" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -154,13 +206,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Less4/src/com/suhorukov/klyuchevsky/commands/Diminution.java" />
-        <option value="$PROJECT_DIR$/Less4/src/com/suhorukov/klyuchevsky/commands/Divide.java" />
-        <option value="$PROJECT_DIR$/Less4/src/com/suhorukov/klyuchevsky/commands/Exp.java" />
-        <option value="$PROJECT_DIR$/Less4/src/com/suhorukov/klyuchevsky/commands/Ln.java" />
-        <option value="$PROJECT_DIR$/Less4/src/com/suhorukov/klyuchevsky/commands/Multiply.java" />
-        <option value="$PROJECT_DIR$/Less4/src/com/suhorukov/klyuchevsky/commands/Pop.java" />
-        <option value="$PROJECT_DIR$/Less4/src/com/suhorukov/klyuchevsky/commands/Print.java" />
         <option value="$PROJECT_DIR$/Less4/src/com/suhorukov/klyuchevsky/commands/Push.java" />
         <option value="$PROJECT_DIR$/Less4/src/com/suhorukov/klyuchevsky/commands/Sqrt.java" />
         <option value="$PROJECT_DIR$/Less4/src/com/suhorukov/klyuchevsky/commands/Commentary.java" />
@@ -170,6 +215,13 @@
         <option value="$PROJECT_DIR$/Less4/src/com/suhorukov/klyuchevsky/Factory.java" />
         <option value="$PROJECT_DIR$/Less4/src/com/suhorukov/klyuchevsky/CalcModified.java" />
         <option value="$PROJECT_DIR$/Less4/src/com/suhorukov/klyuchevsky/Invoker.java" />
+        <option value="$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/HTTPServer.java" />
+        <option value="$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/RequestHandler.java" />
+        <option value="$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/RequestParser.java" />
+        <option value="$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/fileProcessor/FileService.java" />
+        <option value="$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/Exceptions.java" />
+        <option value="$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/NotImplementedCommand.java" />
+        <option value="$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/SocketProcessor.java" />
       </list>
     </option>
   </component>
@@ -242,7 +294,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Less4" />
+              <option name="myItemId" value="Less5" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -252,7 +304,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Less4" />
+              <option name="myItemId" value="Less5" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -261,6 +313,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="klyuchevsky" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JavaLessons" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Less5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="klyuchevsky" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fileProcessor" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -293,11 +367,11 @@
     <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="com.suhorukov.klyuchevsky" />
-    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.suhorukov.klyuchevsky" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\olga_golneva\IdeaProjects\JavaLessons\Less4\src\com\suhorukov\klyuchevsky" />
@@ -312,7 +386,7 @@
       <recent name="C:\Documents and Settings\Svetlana.SVETKA\IdeaProjects\JavaLessons" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CalcModified">
+  <component name="RunManager" selected="Application.HTTPServer">
     <configuration default="false" name="HTMLFileGenerator" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -527,9 +601,9 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.CalcModified" />
-        <item index="1" class="java.lang.String" itemvalue="Application.HTMLFileGenerator" />
-        <item index="2" class="java.lang.String" itemvalue="Application.HTTPServer" />
+        <item index="0" class="java.lang.String" itemvalue="Application.HTTPServer" />
+        <item index="1" class="java.lang.String" itemvalue="Application.CalcModified" />
+        <item index="2" class="java.lang.String" itemvalue="Application.HTMLFileGenerator" />
         <item index="3" class="java.lang.String" itemvalue="JUnit.CalculatorTest" />
         <item index="4" class="java.lang.String" itemvalue="Application.Calculator" />
       </list>
@@ -699,7 +773,11 @@
       <created>1370666855781</created>
       <updated>1370666855781</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Modify Less 4.&#10;Add logger. Need to set up logger. It isn't writing file.">
+      <created>1370666900906</created>
+      <updated>1370666900906</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -877,54 +955,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Less4/src/com/suhorukov/klyuchevsky/commands/Commentary.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="13" selection-start="101" selection-end="101" vertical-scroll-proportion="0.10429448">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Less4/src/com/suhorukov/klyuchevsky/Arg.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="12" selection-start="48" selection-end="48" vertical-scroll-proportion="0.051829267">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Less4/src/com/suhorukov/klyuchevsky/In.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="22" selection-start="306" selection-end="306" vertical-scroll-proportion="0.23323171">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Less2/src/com/suhorukov/klyuchevsky/test/CalculatorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="27" selection-start="384" selection-end="384" vertical-scroll-proportion="0.019428572" />
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_17/jre/lib/rt.jar!/sun/reflect/DelegatingMethodAccessorImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="663" selection-end="663" vertical-scroll-proportion="0.3830156" />
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_17/src.zip!/java/lang/reflect/Method.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="600" column="0" selection-start="24566" selection-end="24566" vertical-scroll-proportion="0.33275563" />
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_17/src.zip!/java/lang/reflect/Proxy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="102" column="21" selection-start="3185" selection-end="3207" vertical-scroll-proportion="-0.08838821" />
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_17/src.zip!/java/util/Scanner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="655" column="0" selection-start="26079" selection-end="26079" vertical-scroll-proportion="0.3323217">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.7.0_17/src.zip!/java/io/FileInputStream.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="137" column="0" selection-start="4535" selection-end="4535" vertical-scroll-proportion="0.3323217" />
@@ -932,52 +962,94 @@
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.7.0_17/src.zip!/java/util/Collections.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1019" column="61" selection-start="43731" selection-end="43780" vertical-scroll-proportion="0.35811836">
-          <folding />
-        </state>
+        <state line="1019" column="61" selection-start="43731" selection-end="43780" vertical-scroll-proportion="0.35811836" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Less4/src/com/suhorukov/klyuchevsky/Command.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="42" selection-start="214" selection-end="214" vertical-scroll-proportion="0.23216996">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Less4/src/com/suhorukov/klyuchevsky/Factory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="143" selection-start="1417" selection-end="1417" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Less4/src/com/suhorukov/klyuchevsky/CalcModified.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="0" selection-start="2062" selection-end="2062" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="9" column="42" selection-start="214" selection-end="214" vertical-scroll-proportion="0.23216996" />
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/Less4/lib/log4j-core-2.0-beta7.jar!/org/apache/logging/log4j/core/Logger.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="43" selection-start="894" selection-end="895" vertical-scroll-proportion="-2.52">
-          <folding />
-        </state>
+        <state line="18" column="43" selection-start="894" selection-end="895" vertical-scroll-proportion="-2.52" />
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/Less4/lib/log4j-api-2.0-beta7.jar!/org/apache/logging/log4j/LogManager.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="50" selection-start="1923" selection-end="1923" vertical-scroll-proportion="-12.24">
-          <folding />
-        </state>
+        <state line="34" column="50" selection-start="1923" selection-end="1923" vertical-scroll-proportion="-12.24" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Less4/src/com/suhorukov/klyuchevsky/Invoker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="46" selection-start="532" selection-end="532" vertical-scroll-proportion="0.5635359">
+        <state line="24" column="24" selection-start="763" selection-end="763" vertical-scroll-proportion="0.7513812" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Less4/src/com/suhorukov/klyuchevsky/Factory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="143" selection-start="1417" selection-end="1417" vertical-scroll-proportion="0.032075472" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Less4/src/com/suhorukov/klyuchevsky/CalcModified.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="0" selection-start="2062" selection-end="2062" vertical-scroll-proportion="0.09208103" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/HTMLFileGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="17" selection-start="1040" selection-end="1040" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/HTTPServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="511" selection-end="511" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/RequestHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="0" selection-start="655" selection-end="655" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/RequestParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="17" selection-start="476" selection-end="476" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/fileProcessor/FileSystem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="23" selection-start="227" selection-end="227" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/fileProcessor/FileService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="348" selection-end="348" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/NotImplementedCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="0" selection-start="606" selection-end="606" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Less5/src/com/suhorukov/klyuchevsky/SocketProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="68" column="40" selection-start="2673" selection-end="2673" vertical-scroll-proportion="0.7328094">
+          <folding />
         </state>
       </provider>
     </entry>

@@ -9,4 +9,14 @@ class RequestParser {
     String parseGet(String getRequest) {
         return getRequest.substring(4, getRequest.length() - 9);
     }
+
+    public static String getRequestMethod(String header) {
+        return "";
+    }
+
+    public static String getRelativePath(String header) {
+        String r = "";
+        return r;
+    }
+
 }
