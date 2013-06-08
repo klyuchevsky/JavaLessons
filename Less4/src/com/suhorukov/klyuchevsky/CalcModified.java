@@ -23,6 +23,7 @@ public class CalcModified {
 
         try {
             if (isDebug) {
+                System.out.println("Start in debug mode");
                 if (args.length >= 2) {
                     File file = new File(args[0]);
                     sc = new Scanner(file);
