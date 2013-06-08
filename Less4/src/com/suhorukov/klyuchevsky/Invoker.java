@@ -5,7 +5,7 @@ import java.lang.reflect.Method;
 import java.util.Map;
 import java.util.Stack;
 
-import org.apache.logging.log4j.core.Logger;
+import org.apache.logging.log4j.*;
 import org.apache.logging.log4j.LogManager;
 //import org.apache.log4j.*;
 //import org.apache.log4j.Logger;
@@ -20,8 +20,8 @@ public class Invoker implements InvocationHandler {
         this.command = command;
         this.stack = stack;
         this.varMap = varMap;
-        this.logger = LogManager.getLogger("1.log");
-//        this.logger = LogManager.getLogger(command.getClass());
+//        this.logger = LogManager.getLogger("1.log");
+        this.logger = LogManager.getLogger(command.getClass());
     }
 
     @Override
