@@ -13,17 +13,14 @@ public class SocketProcessor implements Runnable {
     private String defaultPath;
 
     private final static String CODE_200 = "200 OK";
-
     private final static String CODE_404 = "404 Not Found";
     private final static String BODY_404 = "<h1>Error 404 File not found</h1>";
-
     private final static String CODE_501 = "501 Not Implemented";
     private final static String BODY_501 = "<h1>Error 501 Not implemented</h1>";
-
     private final static String CODE_500 = "500 Internal Server Error";
     private final static String BODY_500 = "<h1>Error 500 Internal Server Error</h1>";
 
-    public SocketProcessor(Socket s, String serverPath) throws IOException {
+    public SocketProcessor(Socket socket, String serverPath) throws IOException {
         this.socket = socket;
         this.inputStream = socket.getInputStream();
         this.outputStream = socket.getOutputStream();
@@ -34,7 +31,10 @@ public class SocketProcessor implements Runnable {
         System.out.println("Starting processor for client " + socket.getInetAddress() + ":" + socket.getPort());
         try {
             String header = readInputHeader();
+            System.out.println(header);
             String method = RequestParser.getRequestMethod(header);
+            System.out.println(!checkRequestMethod(method));
+            System.out.println(method);
             if (!checkRequestMethod(method)) {
                 throw new NotImplementedCommand("Не поддерживаемая команда " + method);
             }
@@ -74,50 +74,6 @@ public class SocketProcessor implements Runnable {
             }
         }
         System.out.println("Client processing finished for client " + socket.getInetAddress() + ":" + socket.getPort());
-
-
-//        try {
-//            char separator = File.separator.toCharArray()[File.separator.length() - 1]; // separator in operation system
-//            File output;
-//            readInputHeaders();
-//            RequestParser requestParser = new RequestParser();
-//            path = requestParser.parseGet(getRequest);
-//
-//            path = getRequest.replaceAll("/+", " ");
-//            path = path.trim();
-//            String[] dirs = path.split(" ");
-//            path = serverPath.getPath();
-//            path = path + separator;
-//
-//
-//            for (String dir : dirs) {
-//                if (separator != (path.charAt(path.length() - 1))) {
-//                    path = path + separator;
-//                }
-//                path = path + dir;
-//            }
-//
-//            System.out.println(path);
-
-//            if (getRequest.charAt(getRequest.length() - 1) == '/') {
-//                output = new File(path);
-//                if (output.exists()) {
-//                    writeResponse("exist");
-//                } else {
-//
-//                }
-//            }
-//            writeResponse("<!DOCTYPE html><head><meta charset=\"utf-8\"></head><html><body><h1>Тестируем сервер</h1></body></html>");
-//        } catch (Throwable t) {
-//            t.printStackTrace();
-//        } finally {
-//            try {
-//                s.close();
-//            } catch (Throwable t) {
-//                t.printStackTrace();
-//            }
-//        }
-//        System.err.println("Client processing finished");
     }
 
     private void writeResponse(String code, String result, String type) throws Throwable {
@@ -131,33 +87,16 @@ public class SocketProcessor implements Runnable {
         outputStream.flush();
     }
 
-    private String readInputHeader() {
-        return "";
+    private String readInputHeader() throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(inputStream));
+        return br.readLine();
     }
 
     private boolean checkRequestMethod(String method) {
-        return false;
+        if ("GET".equals(method) || "HEAD".equals(method))
+            return true;
+        else
+            return false;
     }
-
 }
 
-//    private void readInputHeaders() throws Throwable {
-//        BufferedReader br = new BufferedReader(new InputStreamReader(is));
-//
-//        while (true) {
-//            String s = br.readLine();
-//            if (s.contains("GET")) {
-//                getRequest = s;
-//            }
-//            System.out.println(s);
-//            if (s.trim().length() == 0) {
-//                break;
-//            }
-//        }
-//    }
-//
-//    public void setPath(String path) {
-//        getRequest = path;
-//    }
-//}
-//

@@ -11,7 +11,14 @@ class RequestParser {
     }
 
     public static String getRequestMethod(String header) {
-        return "";
+        String method = "";
+        if (header != null && header.trim().length() > 0) {
+            String[] cmd = header.split(" ");
+            if (cmd[0].length() > 1) {
+                method = cmd[0];
+            }
+        }
+        return method;
     }
 
     public static String getRelativePath(String header) {

@@ -9,7 +9,6 @@ public class HTTPServer {
             defaultPath = args[1];
 
         } else System.out.println("Укажите параметры запуска: порт, директорию сервера");
-
         RequestHandler requestHandler = new RequestHandler(port, defaultPath);
         requestHandler.listen();
     }
