@@ -1,16 +1,15 @@
 package com.suhorukov.klyuchevsky;
 
-import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 
 public class RequestHandler {
     private int port;
-    private String defaultPath;
+    private String absolutePath;
 
-    public RequestHandler(int port, String defaultPath) {
+    public RequestHandler(int port, String absolutePath) {
         this.port = port;
-        this.defaultPath = defaultPath;
+        this.absolutePath = absolutePath;
     }
 
     public void listen() throws Throwable {
@@ -18,7 +17,7 @@ public class RequestHandler {
 
         while (true) {
             Socket clientSocket = serverSocket.accept();
-            Thread thread = new Thread(new SocketProcessor(clientSocket, defaultPath));
+            Thread thread = new Thread(new SocketProcessor(clientSocket, absolutePath));
             thread.start();
         }
     }

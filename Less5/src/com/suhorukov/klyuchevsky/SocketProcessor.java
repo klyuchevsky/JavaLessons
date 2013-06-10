@@ -10,7 +10,7 @@ public class SocketProcessor implements Runnable {
     private Socket socket;
     private InputStream inputStream;
     private OutputStream outputStream;
-    private String defaultPath;
+    private String absolutePath;
 
     private final static String CODE_200 = "200 OK";
     private final static String CODE_404 = "404 Not Found";
@@ -24,7 +24,7 @@ public class SocketProcessor implements Runnable {
         this.socket = socket;
         this.inputStream = socket.getInputStream();
         this.outputStream = socket.getOutputStream();
-        this.defaultPath = defaultPath;
+        this.absolutePath = absolutePath;
     }
 
     public void run() {
@@ -40,7 +40,7 @@ public class SocketProcessor implements Runnable {
             }
             String relativePath = RequestParser.getRelativePath(header);
             System.out.println(relativePath);
-            FileService fileService = new FileService(defaultPath, relativePath);
+            FileService fileService = new FileService(absolutePath, relativePath);
             String result = fileService.getContentByPath();
             writeResponse(CODE_200, result, fileService.getMimeType());
 
@@ -71,18 +71,19 @@ public class SocketProcessor implements Runnable {
             try {
                 socket.close();
             } catch (IOException e) {
+                e.printStackTrace();
             }
         }
         System.out.println("Client processing finished for client " + socket.getInetAddress() + ":" + socket.getPort());
     }
 
     private void writeResponse(String code, String result, String type) throws Throwable {
-        String response = "HTTP/1.1 200 OK\r\n" +
-                "Server: HTTPServer/2013-05-14\r\n" +
-                "Content-Type: text/html\r\n" +
-//                "Content-Length: " + s.length() + "\r\n" +
+        String response = "HTTP/1.1 " + code + "\r\n" +
+                "Server: LocalServer\r\n" +
+                "Content-Type: " + type + "\r\n" +
+                "Content-Length: " + result.length() + "\r\n" +
                 "Connection: close\r\n\r\n";
-//        String result = response + s;
+        outputStream.write(response.getBytes());
         outputStream.write(result.getBytes());
         outputStream.flush();
     }
