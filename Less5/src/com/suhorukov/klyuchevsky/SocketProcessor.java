@@ -20,7 +20,7 @@ public class SocketProcessor implements Runnable {
     private final static String CODE_500 = "500 Internal Server Error";
     private final static String BODY_500 = "<h1>Error 500 Internal Server Error</h1>";
 
-    public SocketProcessor(Socket socket, String serverPath) throws IOException {
+    public SocketProcessor(Socket socket, String absolutePath) throws IOException {
         this.socket = socket;
         this.inputStream = socket.getInputStream();
         this.outputStream = socket.getOutputStream();
@@ -39,9 +39,11 @@ public class SocketProcessor implements Runnable {
                 throw new NotImplementedCommand("Не поддерживаемая команда " + method);
             }
             String relativePath = RequestParser.getRelativePath(header);
+            System.out.println(absolutePath);
             System.out.println(relativePath);
             FileService fileService = new FileService(absolutePath, relativePath);
             String result = fileService.getContentByPath();
+            System.out.println(result);
             writeResponse(CODE_200, result, fileService.getMimeType());
 
         } catch (FileNotFoundException e) {
@@ -81,7 +83,7 @@ public class SocketProcessor implements Runnable {
         String response = "HTTP/1.1 " + code + "\r\n" +
                 "Server: LocalServer\r\n" +
                 "Content-Type: " + type + "\r\n" +
-                "Content-Length: " + result.length() + "\r\n" +
+                "Content-Length: " + result.length() + 1 + "\r\n" +
                 "Connection: close\r\n\r\n";
         outputStream.write(response.getBytes());
         outputStream.write(result.getBytes());

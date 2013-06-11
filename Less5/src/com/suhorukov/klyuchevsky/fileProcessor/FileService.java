@@ -1,5 +1,7 @@
 package com.suhorukov.klyuchevsky.fileProcessor;
 
+import com.suhorukov.klyuchevsky.HTMLFileGenerator;
+
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
@@ -8,15 +10,19 @@ public class FileService {
     private String absolutePath;
     private FileSystem fileSystem;
 
-    public FileService(String defaultPath, String relativePath) {
+    public FileService(String absolutePath, String relativePath) {
         this.relativePath = relativePath;
-        this.absolutePath = defaultPath + relativePath;
-        this.fileSystem = new FileSystem(absolutePath);
-//        setAbsolutePath(defaultPath + relativePath);
+        this.absolutePath = absolutePath + relativePath;
+//        System.out.println(this.absolutePath);
+        this.fileSystem = new FileSystem(this.absolutePath);
+        System.out.println(this.fileSystem.getAbsolutePath());
     }
 
     public String getContentByPath() throws IOException {
         String result = "";
+        System.out.println(!fileSystem.checkExist());
+        System.out.println(fileSystem.checkDir());
+
         if (!fileSystem.checkExist()) {
             throw new FileNotFoundException(absolutePath);
         }
@@ -28,23 +34,21 @@ public class FileService {
         return result;
     }
 
-    private String getDirectoryContent() {
+    private String getDirectoryContent() throws IOException {
         String result = "";
         try {
-            result = fileSystem.getIndex();
+            result = fileSystem.getIndexHTML();
+
         } catch (IOException e) {
-//            result = HTMLGen.generateHTML( fileSystem.getFile(), relativePath);
+            HTMLFileGenerator htmlFileGenerator = new HTMLFileGenerator();
+            result = htmlFileGenerator.generateHTML(fileSystem.getAbsolutePath());
         }
+//        System.out.println(result);
         return result;
     }
 
     public String getMimeType() {
         return "";
-    }
-
-    public void setAbsolutePath(String absolutePath) {
-        this.absolutePath = absolutePath;
-        this.fileSystem = new FileSystem(absolutePath);
     }
 
 }

@@ -42,7 +42,7 @@ public class FileSystem {
         return result.toString();
     }
 
-    public String getIndex() throws IOException {
+    public String getIndexHTML() throws IOException {
         return getFileString(new File(absolutePathFile.getPath() + File.separator + "index.html"));
     }
 
@@ -53,5 +53,9 @@ public class FileSystem {
 
     public boolean checkDir() {
         return absolutePathFile.isDirectory();
+    }
+
+    public File getAbsolutePath() {
+        return absolutePathFile;
     }
 }

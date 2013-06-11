@@ -1,38 +1,43 @@
 package com.suhorukov.klyuchevsky;
 
 import java.io.*;
+import java.text.SimpleDateFormat;
 import java.util.Arrays;
 import java.util.Comparator;
 
 public class HTMLFileGenerator {
 
     public static void main(String[] args) {
+        String output = null;
         if (args.length < 1) {
             System.out.println("Не указана директория");
             return;
         }
 
-        System.out.println(args[0]);
-        HTMLFileGenerator htmlGen = new HTMLFileGenerator();
         File folder = new File(args[0]);
-        try (Writer out = new OutputStreamWriter(new FileOutputStream("index.html"))) {
-            htmlGen.generateHTML(folder, out);
+        HTMLFileGenerator htmlFileGenerator = new HTMLFileGenerator();
+
+        try {
+            htmlFileGenerator.generateHTML(folder);
         } catch (IOException e) {
             e.printStackTrace();
         }
+        System.out.println(output);
     }
 
-    public void generateHTML(File folder, Writer out) throws IOException {
-        if (folder.exists()) {
-            if (folder.isFile()) {
-                folder = new File(folder.getParent());
-            }
-        } else {
-            System.out.println("Неверно указана директория:");
-            return;
-        }
-
-        System.out.println(folder);
+    public String generateHTML(File folder) throws IOException {
+        StringBuilder htmlPage = new StringBuilder();
+//        File requestFolder = new File(path);
+        htmlPage.append("<!DOCTYPE html>\n");
+        htmlPage.append("<head>\n");
+        htmlPage.append("<meta charset=\"utf-8\">\n");
+        htmlPage.append("</head>\n\n");
+        htmlPage.append("<body>");
+        htmlPage.append("<h1>Содержание ").append(folder).append("</h1>\n");
+        htmlPage.append("<hr>\n");
+        htmlPage.append("<table cellpadding=\"1\"> \n");
+        htmlPage.append("<tr><td><h3>Имя</h3></td><td><h3>Размер</h3></td><td><h3>Последнее изменение</h3></td></tr>\n");
+        htmlPage.append("<tr><td>" + "<a href=" + '"').append("..").append('"').append(">...</a></td><td></td><td></td></tr>\n");
 
         File[] files = folder.listFiles();
 
@@ -54,28 +59,21 @@ public class HTMLFileGenerator {
             });
         }
 
-        out.write("<!DOCTYPE html>\n");
-        out.write("<head>\n");
-        out.write("<meta charset=\"utf-8\">\n");
-        out.write("</head>\n\n");
-        out.write("<body>");
-        out.write("<h1>Содержание " + folder + "</h1>\n");
-        out.write("<hr>\n");
-        out.write("<table cellpadding=\"1\"> \n");
-        out.write("<tr><td><h3>Имя</h3></td><td><h3>Размер</h3></td><td><h3>Последнее изменение</h3></td></tr>\n");
-        out.write("<tr><td>" + "<a href=" + '"' + folder.getParent() + '"' + ">...</a></td><td></td><td></td></tr>\n");
         if (files != null) {
             for (File file : files) {
-                out.write("<tr><td><a href=" + '"' + file.getName() + '"' + ">" + file.getName() + "</a></td>");
-                out.write("<td>");
+
+                htmlPage.append("<tr><td><a href=" + '"').append(file.getName()).append('"').append(">").append(file.getName()).append("</a></td>");
+                htmlPage.append("<td>");
                 if (file.isFile()) {
-                    out.write(file.length() + " Byte");
+                    htmlPage.append(file.length()).append(" Byte");
                 }
-                out.write("</td>");
-                out.write("<td>" + new java.text.SimpleDateFormat("dd.MM.yyyy HH:mm:ss").format(file.lastModified()) + "</td></tr>\n");
+                htmlPage.append("</td>");
+                htmlPage.append("<td>").append(new SimpleDateFormat("dd.MM.yyyy HH:mm:ss").format(file.lastModified())).append("</td></tr>\n");
             }
         }
-        out.write("</table>\n");
-        out.write("</body>");
+        htmlPage.append("</table>\n");
+        htmlPage.append("</body>");
+
+        return htmlPage.toString();
     }
 }
